@@ -1,0 +1,53 @@
+---
+layout: default
+title: FAQ
+extra_css:
+  - /assets/css/faq.css
+---
+<script src="//unpkg.com/alpinejs" defer></script>
+
+{% assign categories = site.data.faqs | map: "category" | uniq %}  
+
+<div class="doc-body" x-data='{ "searchTerm": "", "activeCategories": {{ categories | jsonify }} }'>
+
+  <h1>Frequently Asked Questions</h1>
+ 
+  <div class="faq-controls">
+    <input 
+      type="search" 
+      x-model="searchTerm" 
+      placeholder="Search all FAQs..." 
+      class="filter-input"
+    >
+    <div class="faq-filters">
+        {% for category in categories %}
+            <button 
+                @click="const index = activeCategories.indexOf('{{ category }}'); index === -1 ? activeCategories.push('{{ category }}') : activeCategories.splice(index, 1)"
+                :class="{ 'active': activeCategories.includes('{{ category }}') }"
+            >
+            {{ category | capitalize }}
+            </button>
+        {% endfor %}
+    </div>
+  </div>
+
+  <div class="faq-list">
+
+    {% for item in site.data.faqs %}
+      {% if item %}
+        <div 
+          class="faq-item" 
+          data-category="{{ item.category }}"
+          x-show="( $el.dataset.category && activeCategories.includes($el.dataset.category) && (searchTerm === '' || $el.textContent.toLowerCase().includes(searchTerm.toLowerCase())) )"
+        >
+          <p class="faq-item-category">{{ item.category }}</p>
+
+          <h4>{{ item.question }}</h4>
+          
+          {{ item.answer | markdownify }}
+        </div>
+      {% endif %}
+    {% endfor %}
+
+  </div>
+</div>

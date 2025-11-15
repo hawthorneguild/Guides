@@ -1,0 +1,578 @@
+/* ============================================ */
+/* D&D 2024 Monster Stat Block Styles */
+/* Site-wide styles are in style.css */
+/* This file contains ONLY statblock-specific styles */
+/* Uses CSS variables from style.css for consistency */
+/* ============================================ */
+
+
+/* ============================================ */
+/* MONSTER COMPENDIUM PAGE BACKGROUND */
+/* ============================================ */
+
+/* Override body background for monster compendium pages */
+body.monster-page {
+  background-image: var(--statblock-bg-image);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: var(--statblock-body-bg);
+}
+
+/* Override page container for monster compendium */
+.monster-page .page {
+  max-width: 1000px;
+  background: var(--statblock-page-bg) var(--statblock-texture);
+  padding: 20px;
+  box-shadow: 0 0 15px var(--statblock-box-shadow);
+  border-radius: 6px;
+  margin: 20px auto;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ============================================ */
+/* STAT BLOCK CONTAINER (BLOCKQUOTE) */
+/* ============================================ */
+
+/* The main stat block container - uses blockquote for markdown compatibility */
+blockquote.stat-block,
+.stat-block blockquote,
+.monster-page blockquote {
+  background: var(--color-bg-light);
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 0;
+  margin: 1em 0;
+  box-shadow: 0 0 8px var(--statblock-card-shadow);
+  font-family: 'Source Sans 3', Arial, sans-serif;
+  font-style: normal;
+  overflow: hidden;
+  page-break-inside: avoid;
+  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ============================================ */
+/* STAT BLOCK HEADER (MONSTER NAME) */
+/* ============================================ */
+
+/* Monster name header at the top of the stat block */
+.monster-page blockquote h2,
+blockquote.stat-block h2 {
+  font-family: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
+  font-size: 1.3em;
+  color: var(--statblock-header-text);
+  background: var(--color-primary);
+  border: none;
+  margin: 0;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-style: normal;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* ============================================ */
+/* STAT BLOCK CONTENT SPACING */
+/* ============================================ */
+
+/* Add horizontal padding to all content inside stat blocks except headers */
+.monster-page blockquote > *:not(h2):not(h3),
+blockquote.stat-block > *:not(h2):not(h3) {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+/* ============================================ */
+/* STAT BLOCK PARAGRAPHS */
+/* ============================================ */
+
+/* First paragraph in stat block (creature type/size/alignment) */
+.monster-page blockquote p:first-of-type,
+blockquote.stat-block p:first-of-type {
+  font-style: italic;
+  margin: 8px 0 4px 0;
+  font-size: 1em;
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+/* All paragraphs within stat blocks */
+.monster-page blockquote p,
+blockquote.stat-block p {
+  margin: 6px 0;
+  font-size: 1em;
+  line-height: 1.4;
+  font-style: normal;
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+/* ============================================ */
+/* STAT BLOCK SECTION HEADERS */
+/* ============================================ */
+
+/* Section headers within stat blocks (TRAITS, ACTIONS, etc.) */
+.monster-page blockquote h3,
+blockquote.stat-block h3 {
+  font-family: var(--font-header);
+  font-size: 1em;
+  color: var(--color-primary);
+  background: none;
+  border: none;
+  border-bottom: 1.5px solid var(--color-primary);
+  border-top: none;
+  margin: 12px 0 8px 0;
+  padding: 5px 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+  font-style: normal;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ============================================ */
+/* STAT BLOCK TEXT FORMATTING */
+/* ============================================ */
+
+/* Bold text within stat blocks */
+.monster-page blockquote strong,
+blockquote.stat-block strong {
+  font-weight: 700;
+  font-style: normal;
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+/* Italic text within stat blocks */
+.monster-page blockquote em,
+blockquote.stat-block em {
+  font-style: italic;
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+/* Bold italic text (both tags applied) */
+.monster-page blockquote strong em,
+.monster-page blockquote em strong,
+blockquote.stat-block strong em,
+blockquote.stat-block em strong {
+  font-weight: 700;
+  font-style: italic;
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+/* ============================================ */
+/* STAT BLOCK LISTS */
+/* ============================================ */
+
+/* Unordered lists inside stat blocks */
+.monster-page blockquote ul,
+blockquote.stat-block ul {
+  list-style: none;
+  padding: 0 8px;
+  margin: 6px 0;
+}
+
+.monster-page blockquote ul li,
+blockquote.stat-block ul li {
+  margin: 4px 0;
+  font-size: 1em;
+  line-height: 1.4;
+  font-style: normal;
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+/* ============================================ */
+/* STAT BLOCK ABILITY SCORES TABLE */
+/* ============================================ */
+
+/* Main ability scores table (STR, DEX, CON, INT, WIS, CHA) */
+.monster-page blockquote table,
+blockquote.stat-block table {
+  width: calc(100% - 16px);
+  margin: 8px 8px;
+  border-collapse: collapse;
+  font-size: 0.95em;
+  background: none;
+  table-layout: fixed;
+  border: none;
+}
+
+/* Table headers and cells - basic styling */
+.monster-page blockquote table th,
+.monster-page blockquote table td,
+blockquote.stat-block table th,
+blockquote.stat-block table td {
+  padding: 4px 1px;
+  text-align: center;
+  border: none;
+  background: none;
+  min-width: 0;
+  font-family: 'Source Sans 3', Arial, sans-serif;
+  font-style: normal;
+  color: var(--color-text);
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Table headers (MOD, SAVE labels) */
+.monster-page blockquote table th,
+blockquote.stat-block table th {
+  font-weight: 700;
+  color: var(--color-bg-light);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9em;
+}
+
+/* Table data cells */
+.monster-page blockquote table td,
+blockquote.stat-block table td {
+  font-weight: 400;
+}
+
+/* ============================================ */
+/* ABILITY TABLE COLUMN WIDTHS */
+/* Table has 12 columns in 3 groups of 4 (Str/Dex/Con in row 1, Int/Wis/Cha in row 2)
+/* Each group: Ability Name (12%) | Score (8%) | Modifier (8%) | Save (8%)
+/* Total: 3 groups × (12% + 8% + 8% + 8%) = 3 × 36% = ~100% (with rounding) */
+/* ============================================ */
+
+/* Ability name columns (Str, Dex, Con, Int, Wis, Cha) */
+.monster-page blockquote table td:nth-child(1),
+.monster-page blockquote table td:nth-child(5),
+.monster-page blockquote table td:nth-child(9),
+blockquote.stat-block table td:nth-child(1),
+blockquote.stat-block table td:nth-child(5),
+blockquote.stat-block table td:nth-child(9) {
+  width: 12%;
+  text-align: left;
+  font-weight: 700;
+  padding-left: 6px;
+}
+
+/* Ability score value columns (the actual numbers: 10, 14, etc.) */
+.monster-page blockquote table td:nth-child(2),
+.monster-page blockquote table td:nth-child(6),
+.monster-page blockquote table td:nth-child(10),
+blockquote.stat-block table td:nth-child(2),
+blockquote.stat-block table td:nth-child(6),
+blockquote.stat-block table td:nth-child(10) {
+  width: 8%;
+  font-weight: 600;
+}
+
+/* Modifier and Save columns - gray background for visual separation */
+.monster-page blockquote table td:nth-child(3),
+.monster-page blockquote table td:nth-child(4),
+.monster-page blockquote table td:nth-child(7),
+.monster-page blockquote table td:nth-child(8),
+.monster-page blockquote table td:nth-child(11),
+.monster-page blockquote table td:nth-child(12),
+blockquote.stat-block table td:nth-child(3),
+blockquote.stat-block table td:nth-child(4),
+blockquote.stat-block table td:nth-child(7),
+blockquote.stat-block table td:nth-child(8),
+blockquote.stat-block table td:nth-child(11),
+blockquote.stat-block table td:nth-child(12) {
+  width: 8%;
+  font-weight: 400;
+  background: var(--statblock-modifier-bg);
+}
+
+/* ============================================ */
+/* STAT BLOCK DIVIDERS */
+/* ============================================ */
+
+/* Horizontal rules within stat blocks */
+.monster-page blockquote hr,
+blockquote.stat-block hr {
+  border: none;
+  border-top: 1.5px solid var(--color-primary);
+  margin: 8px 8px;
+  transition: border-color 0.3s ease;
+}
+
+/* ============================================ */
+/* STAT BLOCK CREATOR CREDIT */
+/* ============================================ */
+
+/* Creator attribution line at the bottom of stat blocks */
+.statblock-creator {
+  font-family: 'Source Sans 3', Arial, sans-serif;
+  font-size: 0.9em;
+  font-style: italic;
+  color: var(--color-primary);
+  padding: 5px 8px;
+  margin: 8px 8px;
+  text-align: center;
+  border-top: 1.5px solid var(--color-primary);
+  border-bottom: none;
+  width: calc(100% - 16px);
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ============================================ */
+/* GENERAL DIVIDERS */
+/* ============================================ */
+
+/* Horizontal divider lines used throughout the page */
+.statblock-divider {
+  border: 0;
+  height: 1px;
+  background: var(--color-border);
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+/* First divider on the page (optional special styling) */
+.page > .statblock-divider:first-of-type {
+  margin-top: 20px;
+}
+
+/* ============================================ */
+/* MONSTER IMAGES */
+/* ============================================ */
+
+/* Container for monster artwork images */
+.monster-image-container {
+  width: 100%;
+  margin: 2em 0;
+  text-align: center;
+}
+
+/* The image itself - responsive sizing */
+.monster-image-container img {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid var(--color-primary);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px var(--statblock-image-shadow);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image credit/attribution text */
+.image-credit {
+  font-size: 0.9em;
+  color: var(--color-text-secondary);
+  font-style: italic;
+  margin-top: 0.5em;
+  transition: color 0.3s ease;
+}
+
+/* ============================================ */
+/* MONSTER DESCRIPTION/LORE */
+/* ============================================ */
+
+/* Monster lore description section (separate from stat block) */
+.monster-description {
+  font-family: var(--font-body);
+  font-size: 1em;
+  line-height: 1.7;
+  color: var(--color-text);
+  padding: 2em 1em;
+  margin-top: 2em;
+  background: var(--color-bg-light);
+  border: none;
+  border-radius: 0;
+  text-align: justify;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Headers within monster descriptions */
+.monster-description h4 {
+  font-family: var(--font-header);
+  color: var(--color-primary);
+  font-size: 1.4em;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+/* First paragraph in description (no top margin) */
+.monster-description p:first-child {
+  margin-top: 0;
+}
+
+/* Paragraphs in description */
+.monster-description p {
+  margin-bottom: 1em;
+}
+
+/* ============================================ */
+/* MONSTER INDEX/LIST PAGE */
+/* ============================================ */
+
+/* Grid of monster cards on the index page */
+.monster-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 1em 0 2em 0;
+}
+
+/* Individual monster card */
+.monster-card {
+  background: var(--color-bg-light);
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+  padding: 0.5em;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Card hover effect - lift up slightly */
+.monster-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px var(--statblock-card-hover-shadow);
+}
+
+/* Monster name in card */
+.monster-card h3 {
+  font-family: var(--font-header);
+  margin-top: 0;
+  margin-bottom: 0.2em;
+  border: none;
+  font-size: 1.3em;
+}
+
+/* Monster name link */
+.monster-card h3 a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Monster name link hover */
+.monster-card h3 a:hover {
+  color: var(--color-secondary);
+}
+
+/* Challenge Rating display */
+.monster-cr {
+  font-family: 'Source Sans 3', Arial, sans-serif;
+  font-weight: bold;
+  color: var(--color-secondary);
+  margin: 0.3em 0;
+  font-size: 0.95em;
+  transition: color 0.3s ease;
+}
+
+/* Monster type display (Beast, Dragon, etc.) */
+.monster-type {
+  font-family: 'Source Sans 3', Arial, sans-serif;
+  font-style: italic;
+  color: var(--color-text-secondary);
+  margin: 0.3em 0;
+  font-size: 0.9em;
+  transition: color 0.3s ease;
+}
+
+/* ============================================ */
+/* RESPONSIVE DESIGN - MOBILE */
+/* Adjustments for screens 768px wide or smaller */
+/* ============================================ */
+
+@media (max-width: 768px) {
+  /* Reduce base font size for mobile on monster pages */
+  .monster-page {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  /* Full-width page container on mobile */
+  .monster-page .page {
+    padding: 12px;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  /* Slightly smaller stat block borders */
+  .monster-page blockquote,
+  blockquote.stat-block {
+    border-width: 1.5px;
+    margin: 0.8em 0;
+    border-radius: 6px;
+  }
+
+  /* Smaller monster name header */
+  .monster-page blockquote h2,
+  blockquote.stat-block h2 {
+    font-size: 1.1em;
+    padding: 6px 8px;
+  }
+
+  /* Smaller section headers */
+  .monster-page blockquote h3,
+  blockquote.stat-block h3 {
+    font-size: 0.9em;
+    padding: 4px 8px;
+    border-bottom: 1px solid var(--color-primary);
+    border-top: none;
+  }
+
+  /* Make table scrollable horizontally if needed */
+  .monster-page blockquote table,
+  blockquote.stat-block table {
+    font-size: 0.8em;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Reduced table cell padding on mobile */
+  .monster-page blockquote table th,
+  .monster-page blockquote table td,
+  blockquote.stat-block table th,
+  blockquote.stat-block table td {
+    padding: 3px 5px;
+  }
+
+  /* Adjust monster description padding for mobile */
+  .monster-description {
+    padding: 1.5em 0.8em;
+    font-size: 1em;
+  }
+
+  /* Single column layout for monster cards on mobile */
+  .monster-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  /* Increase padding for better touch targets on mobile */
+  .monster-card {
+    padding: 1em;
+  }
+}
+
+/* ============================================ */
+/* PRINT STYLES FOR STAT BLOCKS */
+/* ============================================ */
+
+@media print {
+  .monster-page {
+    background: white;
+  }
+
+  .monster-page .page {
+    box-shadow: none;
+    margin: 0;
+    padding: 0.5in;
+  }
+  
+  .export-button-container,
+  .export-json-button {
+    display: none;
+  }
+  
+  blockquote.stat-block,
+  .monster-page blockquote {
+    page-break-inside: avoid;
+  }
+}

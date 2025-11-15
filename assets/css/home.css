@@ -1,0 +1,200 @@
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.home-hero {
+  background: var(--color-bg-light);
+  border: 3px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 1em 1em;
+  margin: 2em 0 3em 0;
+  text-align: center;
+}
+
+.home-hero h1 {
+  font-family: var(--font-header);
+  color: var(--color-text);
+  font-size: 2.5em;
+  margin: 0 0 0.5em 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-description {
+  color: var(--color-text);
+  font-size: 1.1em;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ============================================
+   HOME SECTIONS
+   ============================================ */
+
+.home-section {
+  margin: 4em 0;
+}
+
+.home-section h2 {
+  font-family: var(--font-header);
+  color: var(--color-primary);
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  border-bottom: 3px solid var(--color-border);
+  padding-bottom: 0.3em;
+}
+
+.section-icon {
+  font-size: 1.2em;
+}
+
+.section-description {
+  color: var(--color-text);
+  font-size: 1.05em;
+  line-height: 1.6;
+  margin-bottom: 2em;
+}
+
+/* ============================================
+   CARD GRID
+   ============================================ */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+}
+
+/* ============================================
+   FEATURE CARDS
+   ============================================ */
+
+.feature-card {
+  background: var(--color-bg-light);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 2em;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.feature-card.wip {
+  opacity: 0.6;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.feature-card h3 {
+  font-family: var(--font-header);
+  color: var(--color-primary);
+  font-size: 1.4em;
+  margin: 0 0 0.5em 0;
+  text-transform: uppercase;
+}
+
+.feature-card p {
+  color: var(--color-text);
+  line-height: 1.5;
+  flex-grow: 1;
+  margin-bottom: 1.5em;
+}
+
+/* ============================================
+   CARD BUTTONS
+   ============================================ */
+
+.card-button {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  background: var(--color-primary);
+  color: var(--color-btn-text);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-family: var(--font-header);
+  font-size: 0.9em;
+  text-transform: uppercase;
+  text-align: center;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+  margin-top: auto;
+  border: none;
+}
+
+.card-button:hover {
+  background: var(--color-secondary);
+  color: var(--color-card-button-text);
+  text-decoration: none;
+}
+
+/* ============================================
+   HOME CREDITS SECTION
+   ============================================ */
+
+.home-credits {
+  background: var(--color-bg-light);
+  border: 2px solid var(--color-border);
+  border-radius: var(--border-radius);
+  padding: 2em;
+  margin: 4em 0 2em 0;
+}
+
+.home-credits h2 {
+  font-family: var(--font-header);
+  color: var(--color-primary);
+  font-size: 1.5em;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
+}
+
+.home-credits p {
+  color: var(--color-text);
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.home-credits p:last-child {
+  margin-bottom: 0;
+}
+
+.home-credits strong {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+  .home-hero h1 {
+    font-size: 1.8em;
+  }
+  
+  .hero-description {
+    font-size: 1em;
+  }
+  
+  .home-section h2 {
+    font-size: 1.6em;
+  }
+  
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+  }
+  
+  .home-hero {
+    padding: 2em 1.5em;
+  }
+}
