@@ -34,10 +34,6 @@ fix the code when we migrate code from one site to the other
 
 ## Crediting Images
 
-I add the source of the images in /resources/credit.md
+I add the source of the images in /resources/credit.md or at the bottom of the page.
 
-
-
-Test
-
-![](/Guides/assets/images/acidify-art-deviantfixed.jpg "this is a test")
+![]( "this is a test")
