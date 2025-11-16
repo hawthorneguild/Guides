@@ -6,7 +6,7 @@ type: Humanoid
 size: Medium
 alignment: typically matches alignment of corresponding dragon
 category: 2014 Fair Game
-creator: Hawthorne Dragon Mash 2022
+creator: xgrnrgrx
 image: https://64.media.tumblr.com/2be365272bcdce44b1f52c86cbdad149/tumblr_nmf2h4dW7d1r7r8d2o1_500.png
 image_credit: Art by #my.art
 ---

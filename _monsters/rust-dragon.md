@@ -6,7 +6,7 @@ type: Monstrosity
 size: Large
 alignment: typically Lawful Neutral
 category: 2014 Fair Game
-creator: Hawthorne Dragon Mash 2022
+creator: Greenjuice
 ---
 
 ## Mature Rust Dragon

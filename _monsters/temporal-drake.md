@@ -6,7 +6,7 @@ type: Dragon
 size: Large
 alignment: typically Neutral
 category: 2014 Fair Game
-creator: Hawthorne Dragon Mash 2022
+creator: Luolang
 ---
 
 ## Temporal Drake
