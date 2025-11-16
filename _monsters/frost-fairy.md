@@ -63,8 +63,3 @@ ___
 > ***Snowball.*** *Ranged Attack Roll:* +6, range 60/120 ft., one target. *Hit:* 6 (1d4 + 4) Bludgeoning damage plus 7 ($2d6$) Cold damage (Total 13 damage).
 
 ---
-## Variant: Frost Fairy Familiar
-
-A Frost Fairy can enter into a compact to serve another creature as a familiar, forming a telepathic bond with its willing creature. While the fairy is within 10 feet of its bonded creature, the creature shares the fairy's **cold immunity** and **fire resistance**. The fairy can end its service as a familiar at any time on a whim, ending the telepathic bond.
-
-Would you like to explore a specific scenario involving a Frost Fairy, such as a strategy for bribing one or a battle where they break their non-lethal compact?
