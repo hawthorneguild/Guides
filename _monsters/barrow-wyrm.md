@@ -34,7 +34,14 @@ In the recent years since the Spellplague, certain practitioners of the arcane p
 These "lesser" barrow wyrms were capable of serving their intended purposes as well as their original counterparts, but they lack the coherent ability to judge their surroundings properly. Another thing that lesser barrow wyrms lack is the draconic spark of magic that would normally allow them to alter their surroundings and use it to their advantage.
 
 #### Variant: Lesser Barrow Wyrm
-To run a lesser barrow wyrm, lower the Intelligence, Wisdom, and Charisma scores of the **barrow wyrm** by 6 and lower its Wisdom and Charisma saving throw bonuses and its Perception bonus by 3 accordingly. A lesser barrow wyrm retains all other statistics. A lesser barrow wyrm does not have regional effects or lair actions.
+To run a lesser barrow wyrm, lower the Intelligence, Wisdom, and Charisma scores of the barrow wyrm by 6 and lower its Wisdom and Charisma saving throw bonuses and its Perception bonus by 3
+accordingly. A lesser barrow wyrm retains all other statistics. A lesser barrow wyrm does not have regional effects or lair actions.
+
+#### Variations
+
+- To determine a barrow wyrm's regional effect upon where it is located, use the regional effects for an adult dragon corresponding with what kind of dragon was used in the creation of the wyrm. The DC is the same as its lair actions.
+- If you want to run a lesser version of a barrow wyrm, forgo the regional effects, lower all mental stats by 6, and keep physical stats the same.
+- Depending on how they were made and who they were made from, barrow wyrms will either resort to violence upon first sight of an intruder in their territory or be willing to take some time to study their new visitor while hidden away. Spirits generally can't learn of things that have happened past their death, so they tend to default to what they are used to and what they see in the moment.
 
 #### Regional Effects
 A barrow wyrm's regional effects are the same as the corresponding adult dragon that the barrow wyrm originated from. The DC for any associated saving throws is 15.
