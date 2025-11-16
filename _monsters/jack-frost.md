@@ -86,6 +86,7 @@ While in mist form, it appears as a shimmering cloud of snowflakes, can only use
 Constitution saving throw or be restrained until the start of its next turn.
 >
 ___
+
 ## Combat Tactics
 
 The jack frost is an agile creature that should be played as a malicious troublemaker that can make life miserable for the party. When engaging in combat, the jack frost should use its flight speed and flyby to weave in and out of range when making attacks, and make use of its spells from range. The jack frost should never touch the ground if it can help

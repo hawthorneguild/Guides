@@ -17,6 +17,7 @@ A Gøbblervøki is created from the shadow of a mortal that becomes lost in the 
 More notably, a Gøbblervøki is sometimes created directly as the result of a punishment by one of the **queens of Faerie**. Mortals that earn the ire of the Queens of Summer and Winter may find themselves bound to servitude, and separated from their shadow, which then becomes a Gøbblervøki free to wreak havoc in the areas of life that the mortal found important in the Material Plane.
 
 #### Gøbblervøki Tactics
+
 The Gøbblervøki is an ambusher that uses hit-and-run tactics to defeat its foes. A typical encounter begins with the Lashing Shadows, often before the party is even aware of the creature's presence. Then, utilizing its Shadow Stealth and Shadow Stride abilities, it moves around the battlefield picking apart opponents before moving into position and delivering the finishing blow with another big Lashing Shadows.
 
 ___

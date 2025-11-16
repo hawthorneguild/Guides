@@ -17,6 +17,7 @@ do not use any other tools. Kodragons have a high level of wanderlust, but each 
 They have a pouch on their abdomen where their infants are kept safe, which operates in a similar fashion as a bag of holding, being much bigger inside than it seems. Kodragons often use this pouch to hold their tablets and styluses.  Kodragons sustain themselves by drinking liquid of any kind.  
 
 #### Tactics
+
 Kodragons tend to avoid combat whenever possible, but if forced to fight or defend themselves, they will stay aloft, allowing them to maneuver in the air, and fly by their enemies to claw and bite them, and then fly out of range. They can dart through the air and around their enemies very quickly, which makes them extremely hard to hit while in flight. Kodragons have two magical breath weapons, one that shrinks its target, and the other one brings them back to their initial size. However, the latter breath doesn't reverse other means of shrinking, but instead only reverses the effect of its shrinking breath. A kodragon will usually try to open the fight
 by shrinking their enemies before attacking them in melee. If they are in a dire situation, they will either teleport or plane shift away to survive.
 
