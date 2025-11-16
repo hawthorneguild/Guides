@@ -21,6 +21,7 @@ The Queen of Air and Darkness employs fey spirits of wind and snow to retrieve c
 in the flaying and eating of naughty children, presumably to procure more material to make vellum for its list.
 
 #### Combat Tactics
+
 Grimfrel are employed by the Queen of Air and Darkness to subdue and retrieve those that have   earned the ire of the Unseelie Fey, whether it by offering insult, or breaking a fey bargain. The   Grimfrel tracks its charge invisibly, attacking when the target least expects it. During an ambush, it first strikes with its claws and Frostbite to capitalize upon catching its target sleeping or otherwise unaware. After delivering vicious slashes, it uses its Frigid Visage to sap the creature's stamina, to prevent escape. When the prey begins to falter and stumble, it then freezes it solid with Winter's Grasp, in preparation for transport back to the lands of Winter in the Feywild. Once its charge is captured, it may choose to seek out any nearby   humanoids, rewarding the nice with gifts, while flaying the naughty in their beds, sure to return to the lands of its Queen before the morning light.
 
 ___

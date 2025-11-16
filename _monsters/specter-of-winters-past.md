@@ -23,6 +23,7 @@ Living creatures remind these specters that life is beyond their grasp. The mere
 A Specter of Winters Past is a remnant of a humanoid that met its untimely end during winter and was prevented from passing on into the afterlife. It is doomed to haunt the place of its death during the winter months.
 
 #### Combat Tactics
+
 The Specter of Winters Past would start combat with its Candle Extinguisher on its head, would use its Summon Spectral Helpers on its first turn of combat. On its second turn, it would remove its Candle Extinguisher from its head, hopefully after enemies have moved in to engage it, causing them to potentially be blinded. It would then try and use its Memory Twist ability, specifically to try and target as many enemies as possible so that its helpers can gang up on stunned targets. It will try and stay within melee range of its foes, using its Blinding Candle to its advantage as it pummels its enemies.
 
 ___

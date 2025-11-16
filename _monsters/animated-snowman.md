@@ -22,14 +22,17 @@ The original Animated Snowmen were built by a group of nomadic gnomes traveling 
 Animated Snowmen will create festive displays in order to hide in plain sight. Displays are created with snow and available foliage in the area to make circlets, necklaces, and facial expressions. If the snowmen kill a creature near their display, they will hide the body in another snowman and add it to the display. Any blood spilled will be used to add rosy cheeks, red lips, and festive stripes to elements of the display. Animated snowmen will not leave the area they were charged to protect, even if the snow melts to the point where their festive display is reduced to a ghastly display of thawing corpses and an ominous snowman remaining perfectly frozen.
 
 ### Combat Tactics
-> **Step 1.** Describe happy snow scene.
-> **Step 2.** If party doesn't go look, describe how some type of scavenger animals are in the area.
-> **Step 3.** If the party investigates, they find a dead body inside the snowman, then get smacked by the Animated Snowman for messing up the display. 
-> **Step 4.** Laugh when the monk hits it 4 times and drives the AC up real high.
-> **Step 5.** Cry when someone hits it with fire.
-> **Step 6.** ???
-> **Step 7.** Profit.
+
+* **Step 1.** Describe happy snow scene.
+* **Step 2.** If party doesn't go look, describe how some type of scavenger animals are in the area.
+* **Step 3.** If the party investigates, they find a dead body inside the snowman, then get smacked by the Animated Snowman for messing up the display. 
+* **Step 4.** Laugh when the monk hits it 4 times and drives the AC up real high.
+* **Step 5.** Cry when someone hits it with fire.
+* **Step 6.** ???
+* **Step 7.** Profit.
+
 ___
+
 > ## Animated Snowman
 > *Medium construct, unaligned*
 >
