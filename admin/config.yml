@@ -72,7 +72,7 @@ collections:
 
   - name: "field_guide"
     label: "Field Guide"
-    folder: "_field_guide"
+    folder: "_fieldguide"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
