@@ -1,12 +1,12 @@
 # --- Backend Authentication (DecapBridge) ---
 backend:
   name: git-gateway
-  repo: coconutswallow/Guides
+  repo: hawthorneguild/Guides
   branch: main
   auth_type: pkce
   base_url: https://auth.decapbridge.com
-  auth_endpoint: /sites/a9c3edd8-e3cd-4b70-89e3-adb5acdd7a8f/pkce
-  auth_token_endpoint: /sites/a9c3edd8-e3cd-4b70-89e3-adb5acdd7a8f/token
+  auth_endpoint: /sites/2310b1bb-aa9a-49e0-82dc-271358a0c899/pkce
+  auth_token_endpoint: /sites/2310b1bb-aa9a-49e0-82dc-271358a0c899/token
   gateway_url: https://gateway.decapbridge.com
   commit_messages:
     create: "Create {{collection}} \"{{slug}}\" - {{author-name}} <{{author-login}}> via DecapBridge"
