@@ -51,8 +51,8 @@ ___
 >
 > | | | MOD | SAVE | | | MOD | SAVE | | | MOD | SAVE |
 > |:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|
-> |Str| 22| +6 | +6 |Dex| 21| +5 | **+9** |Con| 16| +3 | **+7** |
-> |Int| 14| +2 | +2 |Wis| 15| +2 | **+6** |Cha| 19| +4 | +4 |
+> |Str| 22| +6 | +4 |Dex| 21| +5 | **+9** |Con| 16| +3 | **+7** |
+> |Int| 14| +2 | +4 |Wis| 15| +2 | **+6** |Cha| 19| +4 | +4 |
 >
 > **Saving Throws** Dex +9, Con +7, Wis +6
 > **Skills** Acrobatics +9, Deception +8, Perception +6, Stealth +9, Survival +6  

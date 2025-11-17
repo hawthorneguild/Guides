@@ -46,8 +46,8 @@ ___
 >
 > |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
 > |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
-> | **Str** | 16 | +3 | +5 | **Dex** | 14 | +2 | +4 | **Con** | 16 | +3 | +5 |
-> | **Int** | 10 | +0 | +2 | **Wis** | 14 | +2 | +4 | **Cha** | 16 | +3 | +5 |
+> | **Str** | 16 | +3 | +3 | **Dex** | 14 | +2 | +3 | **Con** | 16 | +3 | +3 |
+> | **Int** | 10 | +0 | +3 | **Wis** | 14 | +2 | +3 | **Cha** | 16 | +3 | +3 |
 >
 > **Skills** Deception +9, Perception +5  
 > **Damage Resistances** Necrotic; Bludgeoning, Piercing, and Slashing from nonmagical attacks  

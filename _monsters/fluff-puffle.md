@@ -25,8 +25,8 @@ ___
 >
 > |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
 > |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
-> | **Str** | 7 | -2 | +0 | **Dex** | 15 | +2 | +4 | **Con** | 10 | +0 | +2 |
-> | **Int** | 12 | +1 | +3 | **Wis** | 16 | +3 | +5 | **Cha** | 18 | +4 | +6 |
+> | **Str** | 7 | -2 | +2 | **Dex** | 15 | +2 | +2 | **Con** | 10 | +0 | +2 |
+> | **Int** | 12 | +1 | +2 | **Wis** | 16 | +3 | +2 | **Cha** | 18 | +4 | +2 |
 >
 > **Skills** Insight +5, Performance +6  
 > **Condition Immunities** Charmed, Exhaustion, Frightened, Prone  

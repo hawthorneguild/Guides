@@ -44,8 +44,8 @@ ___
 >
 > |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
 > |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
-> | **Str** | 1 | -5 | -3 | **Dex** | 15 | +2 | +4 | **Con** | 14 | +2 | +4 |
-> | **Int** | 16 | +3 | +5 | **Wis** | 18 | +4 | +6 | **Cha** | 21 | +5 | +7 |
+> | **Str** | 1 | -5 | +3 | **Dex** | 15 | +2 | +3 | **Con** | 14 | +2 | +3 |
+> | **Int** | 16 | +3 | +3 | **Wis** | 18 | +4 | +3 | **Cha** | 21 | +5 | +3 |
 >
 > **Saving Throws** Int +6, Wis +7, Cha +8  
 > **Damage Resistances** acid, cold, fire, lightning, psychic, thunder; bludgeoning, piercing, and slashing from nonmagical attacks  

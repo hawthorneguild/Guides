@@ -40,8 +40,8 @@ ___
 >
 > |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
 > |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
-> | **Str** | 19 | +4 | +6 | **Dex** | 9 | -1 | +1 | **Con** | 18 | +4 | +6 |
-> | **Int** | 1 | -5 | -3 | **Wis** | 7 | -2 | +0 | **Cha** | 1 | -5 | -3 |
+> | **Str** | 19 | +4 | +3 | **Dex** | 9 | -1 | +3 | **Con** | 18 | +4 | +3 |
+> | **Int** | 1 | -5 | +3 | **Wis** | 7 | -2 | +3 | **Cha** | 1 | -5 | +3 |
 >
 > **Damage Vulnerabilities** fire
 > **Damage Resistances** bludgeoning, piercing, and slashing

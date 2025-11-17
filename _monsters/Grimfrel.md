@@ -32,8 +32,8 @@ ___
 >
 > |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
 > |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
-> | **Str** | 21 | +5 | +7 | **Dex** | 18 | +4 | +6 | **Con** | 16 | +3 | +5 |
-> | **Int** | 11 | +0 | +2 | **Wis** | 16 | +3 | +5 | **Cha** | 12 | +1 | +3 |
+> | **Str** | 21 | +5 | +4 | **Dex** | 18 | +4 | +4 | **Con** | 16 | +3 | +4 |
+> | **Int** | 11 | +0 | +4 | **Wis** | 16 | +3 | +4 | **Cha** | 12 | +1 | +4 |
 >
 > **Skills** Athletics +9, Perception +7, Stealth +8, Survival +7  
 > **Damage Resistances** Bludgeoning, Piercing, and Slashing from Nonmagical Attacks  

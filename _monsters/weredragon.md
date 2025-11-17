@@ -53,8 +53,8 @@ ___
 >
 > |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
 > |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
-> | **Str** | 20 | +5 | +7 | **Dex** | 12 | +1 | +3 | **Con** | 19 | +4 | +6 |
-> | **Int** | 12 | +1 | +3 | **Wis** | 14 | +2 | +4 | **Cha** | 12 | +1 | +3 |
+> | **Str** | 20 | +5 | +4 | **Dex** | 12 | +1 | +4 | **Con** | 19 | +4 | +4 |
+> | **Int** | 12 | +1 | +4 | **Wis** | 14 | +2 | +4 | **Cha** | 12 | +1 | +4 |
 >
 > **Skills** Perception +6, Stealth +5  
 > **Damage Immunities** Damage type corresponding to a kind of dragon (see Draconic Form below); Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered  

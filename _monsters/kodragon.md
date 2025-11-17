@@ -29,8 +29,8 @@ ___
 >
 > |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
 > |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
-> | **Str** | 4 | -3 | -1 | **Dex** | 20 | +5 | +7 | **Con** | 13 | +1 | +3 |
-> | **Int** | 16 | +3 | +5 | **Wis** | 12 | +1 | +3 | **Cha** | 15 | +2 | +4 |
+> | **Str** | 4 | -3 | +2 | **Dex** | 20 | +5 | +2 | **Con** | 13 | +1 | +2 |
+> | **Int** | 16 | +3 | +2 | **Wis** | 12 | +1 | +2 | **Cha** | 15 | +2 | +2 |
 >
 > **Skills** Arcana +6, Investigation +6, Perception +5, Stealth +4  
 > **Condition Immunities** Frightened, Paralyzed, Poisoned  

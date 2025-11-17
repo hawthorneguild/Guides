@@ -21,10 +21,10 @@ ___
 > 
 > **Initiative** +0 (10)
 >
-> | | | MOD | SAVE | | | MOD | SAVE | | | MOD | SAVE |
-> |:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|
-> |Str| 20| +5 | +5 |Dex| 10| +0 | +0 |Con| 18| +4 | +4 |
-> |Int| 3| -4 | -4 |Wis| 10| +0 | +0 |Cha| 1| -5 | -5 |
+> |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
+> |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
+> | **Str** | 20 | +5 | +4 | **Dex** | 10 | +0 | +4 | **Con** | 18 | +4 | +4 |
+> | **Int** | 3 | -4 | +4 | **Wis** | 10 | +0 | +4 | **Cha** | 1 | -5 | +4 |
 > 
 > **Damage Immunities** Necrotic, Poison, Psychic; Bludgeoning, Piercing, and Slashing from nonmagical weapons that aren't adamantine
 >

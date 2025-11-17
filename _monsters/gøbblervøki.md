@@ -29,8 +29,8 @@ ___
 >
 > |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
 > |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
-> | **Str** | 12 | +1 | +3 | **Dex** | 16 | +3 | +5 | **Con** | 14 | +2 | +4 |
-> | **Int** | 18 | +4 | +6 | **Wis** | 17 | +3 | +5 | **Cha** | 14 | +2 | +4 |
+> | **Str** | 12 | +1 | +4 | **Dex** | 16 | +3 | +4 | **Con** | 14 | +2 | +4 |
+> | **Int** | 18 | +4 | +4 | **Wis** | 17 | +3 | +4 | **Cha** | 14 | +2 | +4 |
 >
 > **Skills** Perception +11, Stealth +7  
 > **Condition Immunities** Charmed, Exhaustion, Frightened, Grappled, Paralyzed, Poisoned, Prone, Restrained  

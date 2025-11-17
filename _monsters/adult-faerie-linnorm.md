@@ -41,10 +41,10 @@ ___
 >
 > |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
 > |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
-> | **Str** | 21 | +5 | +7 | **Dex** | 12 | +1 | +3 | **Con** | 20 | +5 | +7 |
-> | **Int** | 14 | +2 | +4 | **Wis** | 16 | +3 | +5 | **Cha** | 21 | +5 | +7 |
+> | **Str** | 21 | +5 | +4 | **Dex** | 12 | +1 | +4 | **Con** | 20 | +5 | +4 |
+> | **Int** | 14 | +2 | +4 | **Wis** | 16 | +3 | +4 | **Cha** | 21 | +5 | +4 |
 >
-> **Saving Throws** Dex +5, Con +9, Wis +
+> **Saving Throws** Dex +5, Con +9, Wis +7
 > **Skills** Insight +7, Perception +11, Stealth +5
 > **Damage Immunities** fire  
 > **Condition Immunities** Charmed  
