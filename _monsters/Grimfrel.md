@@ -58,10 +58,11 @@ ___
 >
 > ***Icy Claws.*** *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 12 (2d6 + 5) slashing damage plus 14 (4d6) cold damage.  
 >
-> ***Frostbite.*** *Melee Weapon Attack:* +9 to hit, reach 5 ft., one target. *Hit:* 14 (2d8 + 5) piercing damage.  
-> If the target is a creature other than an undead or a construct, it must succeed on a DC 15 Constitution saving throw or take 1d10 cold damage at the start of each of its turns due to spreading frostbite. Each time the Grimfrel hits the wounded target with this attack, the cold damage increases by 1d10. A creature can tend to the frostbite with a successful DC 15 Wisdom (Medicine) check, or the frostbite ends if the target receives magical healing.  
+> ***Frostbite.*** Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) piercing damage.
+> If the target is a creature other than an undead or a construct, it must succeed on a DC 15 Constitution saving throw or take 1d10 cold damage at the start of each of its turns due to spreading frostbite. Each time the Grimfrel hits the wounded target with this attack, the cold damage increases by 1d10. A creature can use an action to tend to the frostbite with a successful DC 15 Wisdom (Medicine) check, or the frostbite ends if the target receives magical healing
 >
-> ***Frigid Visage.*** Each creature within 60 feet of the Grimfrel that can see it must succeed on a DC 15 Constitution saving throw or gain one level of exhaustion. An affected creature can repeat the saving throw at the end of each of its turns, with disadvantage if the Grimfrel remains in sight. On a success, one level of exhaustion imposed this way ends. A creature immune to this effect for 24 hours after succeeding.  
+> ***Frigid Visage.*** Each creature within 60 feet of the Grimfrel that can see it must succeed on a DC 15 Consti
+tution saving throw or gain one level of exhaustion. An affected creature can repeat the saving throw at the end of each of its turns, with disadvantage if the Grimfrel remains in sight. On a success, one level of exhaustion imposed this way ends. A creature immune to this effect for 24 hours after succeeding.  
 >
 > ***Sense Guilt.*** The Grimfrel targets a creature it can see within 10 feet and magically perceives the creature’s emotional state. The target must succeed on a DC 15 Charisma saving throw or the Grimfrel also learns its alignment. On a success, the creature is immune to this effect for 24 hours.  
 >
