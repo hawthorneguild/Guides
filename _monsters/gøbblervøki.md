@@ -14,6 +14,7 @@ image_credit: Art by Iren Horrors
 ## Gøbblervøki
 
 A Gøbblervøki is created from the shadow of a mortal that becomes lost in the Feywild. Over time, the mortal's thoughts and fears coalesce into a wicked winged creature that seeks to unmake everything that its originator stood for. A Gøbblervøki born from a lost hunter or conservationist may attack nearby livestock or farmland, and one created from a lost priest may attack churches or temples.
+
 More notably, a Gøbblervøki is sometimes created directly as the result of a punishment by one of the **queens of Faerie**. Mortals that earn the ire of the Queens of Summer and Winter may find themselves bound to servitude, and separated from their shadow, which then becomes a Gøbblervøki free to wreak havoc in the areas of life that the mortal found important in the Material Plane.
 
 #### Gøbblervøki Tactics
@@ -26,10 +27,10 @@ ___
 >
 > **AC** 17 (Natural Armor) **HP** 120 (16d10 + 32) **Speed** 30 ft., fly 60 ft.
 >
-> | | | MOD | SAVE | | | MOD | SAVE | | | MOD | SAVE |
-> |:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|
-> |Str| 12| +1| +5|Dex| 16| +3 | +7|Con| 14| +2 | +6|
-> |Int| 18| +4 | +8|Wis| 17| +3 | +7|Cha| 14| +2 | +6|
+> |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
+> |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
+> | **Str** | 12 | +1 | +3 | **Dex** | 16 | +3 | +5 | **Con** | 14 | +2 | +4 |
+> | **Int** | 18 | +4 | +6 | **Wis** | 17 | +3 | +5 | **Cha** | 14 | +2 | +4 |
 >
 > **Skills** Perception +11, Stealth +7  
 > **Condition Immunities** Charmed, Exhaustion, Frightened, Grappled, Paralyzed, Poisoned, Prone, Restrained  

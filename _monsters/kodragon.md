@@ -27,10 +27,10 @@ ___
 >
 > **AC** 15 **HP** 17 (5d4 + 5) **Speed** 20 ft., fly 60 ft.
 >
-> | | | MOD | SAVE | | | MOD | SAVE | | | MOD | SAVE |
-> |:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|
-> |Str| 4| -3| -1|Dex| 14| +2 | +4|Con| 16| +3 | +5|
-> |Int| 18| +4 | +6|Wis| 16| +3 | +5|Cha| 12| +1 | +3|
+> |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
+> |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
+> | **Str** | 4 | -3 | -1 | **Dex** | 20 | +5 | +7 | **Con** | 13 | +1 | +3 |
+> | **Int** | 16 | +3 | +5 | **Wis** | 12 | +1 | +3 | **Cha** | 15 | +2 | +4 |
 >
 > **Skills** Arcana +6, Investigation +6, Perception +5, Stealth +4  
 > **Condition Immunities** Frightened, Paralyzed, Poisoned  

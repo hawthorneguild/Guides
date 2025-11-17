@@ -37,8 +37,10 @@ ___
 > |Str| 18| +4| +8|Dex| 19| +4 | +8|Con| 16| +3 | +7|
 > |Int| 7| -2 | +2|Wis| 17| +3 | +7|Cha| 11| +0 | +4|
 >
+> **Saving Throws** Dex +8, Wis +7
 > **Skills** Insight +7, Perception +7, Stealth +8  
 > **Damage Immunities** Poison  
+> **Damage Resistances** acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks
 > **Condition Immunities** Charmed, Exhaustion, Frightened, Grappled, Paralyzed, Petrified, Poisoned, Prone, Restrained  
 > **Senses** Darkvision 120 ft., Passive Perception 17  
 > **Languages** Common  

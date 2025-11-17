@@ -32,10 +32,10 @@ ___
 >
 > **AC** 16 (natural armor) **HP** 201 (13d20 + 65) **Speed** 0 ft., fly 80 ft. (hover)
 >
-> | | | MOD | SAVE | | | MOD | SAVE | | | MOD | SAVE |
-> |:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|
-> |Str| 22| +6| +10|Dex| 10| +0 | +4|Con| 20| +5 | +9|
-> |Int| 3| -4 | +0|Wis| 12| +1 | +5|Cha| 5| -3 | +1|
+> |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
+> |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
+> | **Str** | 22 | +6 | +8 | **Dex** | 10 | +0 | +2 | **Con** | 20 | +5 | +7 |
+> | **Int** | 3 | -4 | -2 | **Wis** | 12 | +1 | +3 | **Cha** | 5 | -3 | -1 |
 >
 > **Skills** Perception +5, Stealth +4  
 > **Damage Resistances** bludgeoning, piercing and slashing from nonmagical attacks  

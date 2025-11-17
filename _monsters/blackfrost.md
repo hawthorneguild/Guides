@@ -38,12 +38,13 @@ ___
 >
 > **AC** 18 (plate armor) **HP** 170 (20d8 + 80) **Speed** 30 ft.
 >
-> | | | MOD | SAVE | | | MOD | SAVE | | | MOD | SAVE |
-> |:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|
-> |Str| 20| +5 | — |Dex| 11| +0 | +4 |Con| 18| +4 | — |
-> |Int| 13| +1 | — |Wis| 15| +2 | +6 |Cha| 18| +4 | +8 |
+> |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
+> |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
+> | **Str** | 20 | +5 | +7 | **Dex** | 11 | +0 | +2 | **Con** | 18 | +4 | +6 |
+> | **Int** | 13 | +1 | +3 | **Wis** | 15 | +2 | +4 | **Cha** | 18 | +4 | +6 |
 >
-> **Resistances** Necrotic  
+> **Saving Throws** Dex +4,Wis +6 Cha +8
+> **Damage Resistances** Necrotic  
 > **Damage Immunities** Cold, Poison 
 > **Condition Immunities** Exhaustion, Frightened, Poisoned  
 > **Senses** Darkvision 120 ft., Passive Perception 12  

@@ -69,14 +69,15 @@ ___
 >
 > **AC** 19 (natural armor) **HP** 126 (11d12 + 55) **Speed** 40 ft., burrow 30 ft.
 >
-> | | | MOD | SAVE | | | MOD | SAVE | | | MOD | SAVE |
-> |:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|
-> |Str| 22| +6 | +6 |Dex| 10| +0 | +4 |Con| 20| +5 | +9 |
-> |Int| 8| -1 | -1 |Wis| 12| +1 | +5 |Cha| 14| +2 | +6 |
+> |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
+> |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
+> | **Str** | 22 | +6 | +8 | **Dex** | 10 | +0 | +2 | **Con** | 20 | +5 | +7 |
+> | **Int** | 8 | -1 | +1 | **Wis** | 12 | +1 | +3 | **Cha** | 14 | +2 | +4 |
 >
+> **Saving Throws** Dex +4, Con +9, Wis +5, Cha +
 > **Skills** Perception +9, Stealth +4  
-> **Resistances** Necrotic  
-> **Immunities** Poison  
+> **Damage Resistances** Necrotic  
+> **Damage Immunities** Poison  
 > **Condition Immunities** Poisoned  
 > **Senses** Blindsight 60 ft., Darkvision 120 ft., Passive Perception 19  
 > **Languages** Draconic and up to three other languages  

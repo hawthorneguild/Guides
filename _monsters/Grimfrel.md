@@ -30,14 +30,14 @@ ___
 >
 > **AC** 16 (natural armor) **HP** 170 (20d10 + 60) **Speed** 40 ft.
 >
-> | | | MOD | SAVE | | | MOD | SAVE | | | MOD | SAVE |
-> |:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|
-> |Str| 21| +5 | +9 |Dex| 18| +4 | +8 |Con| 16| +3 | — |
-> |Int| 11| +0 | — |Wis| 16| +3 | +7 |Cha| 12| +1 | — |
+> |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
+> |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
+> | **Str** | 21 | +5 | +7 | **Dex** | 18 | +4 | +6 | **Con** | 16 | +3 | +5 |
+> | **Int** | 11 | +0 | +2 | **Wis** | 16 | +3 | +5 | **Cha** | 12 | +1 | +3 |
 >
 > **Skills** Athletics +9, Perception +7, Stealth +8, Survival +7  
-> **Resistances** Bludgeoning, Piercing, and Slashing from Nonmagical Attacks  
-> **Immunities** Cold, Fire; Exhaustion, Stunned  
+> **Damage Resistances** Bludgeoning, Piercing, and Slashing from Nonmagical Attacks  
+> **Damage Immunities** Cold, Fire; Exhaustion, Stunned  
 > **Senses** Darkvision 120 ft., Passive Perception 17  
 > **Languages** Common, Sylvan, Elvish  
 > **CR** 11 (XP 7,200; PB +4)

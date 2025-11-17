@@ -51,13 +51,13 @@ ___
 >
 > **AC** 13 (studded leather) in humanoid form, 14 (natural armor) in hybrid form **HP** 119 (14d8 + 56) **Speed** 30 ft. (fly 60 ft. in hybrid form)
 >
-> | | | MOD | SAVE | | | MOD | SAVE | | | MOD | SAVE |
-> |:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|
-> |Str| 20| +5 | +5 |Dex| 12| +1 | +1 |Con| 19| +4 | +4 |
-> |Int| 12| +1 | +1 |Wis| 14| +2 | +2 |Cha| 12| +1 | +1 |
+> |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
+> |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
+> | **Str** | 20 | +5 | +7 | **Dex** | 12 | +1 | +3 | **Con** | 19 | +4 | +6 |
+> | **Int** | 12 | +1 | +3 | **Wis** | 14 | +2 | +4 | **Cha** | 12 | +1 | +3 |
 >
 > **Skills** Perception +6, Stealth +5  
-> **Immunities** Damage type corresponding to a kind of dragon (see Draconic Form below); Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered  
+> **Damage Immunities** Damage type corresponding to a kind of dragon (see Draconic Form below); Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't silvered  
 > **Senses** Blindsight 10 ft. (hybrid form only), Darkvision 60 ft., Passive Perception 16  
 > **Languages** Common, Draconic  
 > **CR** 9 (XP 5,000; PB +4)

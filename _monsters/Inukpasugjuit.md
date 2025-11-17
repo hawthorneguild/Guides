@@ -36,8 +36,9 @@ ___
 > |Str| 23| +6 | +9 |Dex| 9| -1 | -1 |Con| 21| +5 | +8 |
 > |Int| 9| -1 | -1 |Wis| 10| +0 | +3 |Cha| 12| +1 | +4 |
 >
+> **Saving Throws** Con +8, Wis +3, Cha +4
 > **Skills** Athletics +9, Perception +3  
-> **Immunities** Cold  
+> **Damage Immunities** Cold  
 > **Senses** Passive Perception 13  
 > **Languages** Giant  
 > **CR** 8 (XP 3,900; PB +3)
@@ -58,6 +59,6 @@ ___
 >
 > ***Freezing Breath.*** The Inukpasugjuit exhales freezing breath in a 15-foot line targeting the creature it has grappled. Each creature in that line must succeed on a DC 16 Constitution saving throw. On a failed save, a target begins to turn to ice and is restrained. The restrained target must repeat the saving throw at the end of its next turn. On a success, the effect ends on the target. On a failure, the target is petrified until freed by the *greater restoration* spell or other magic. Any water or liquid that is principally water in the area of the breath instantly freezes to a depth of 6 inches.  
 >
-> ***“Friendcicle” Special.*** The Inukpasugjuit grabs one of the petrified humanoids in its massive bag and throws it up to 60 feet in a direction of its choice. If a thrown target strikes a solid surface, it takes 7 (2d6) bludgeoning damage for every 10 feet it was thrown. If this damage would reduce the thrown target to 0 hit points, it shatters into pieces. If the target is thrown at another creature, that creature must succeed on a DC 17 Dexterity saving throw or take the same damage and be knocked prone. If there are no more humanoids in the bag, the Inukpasugjuit can use any creature that has been petrified with its freezing breath. It cannot use this ability if there are no petrified humanoids available.  
+> ***“Friendcicle” Special.*** The Inukpasugjuit grabs one of the petrified humanoids in his massive bag and throws it up to 60 feet in a direction of its choice. If a thrown target strikes a solid surface, the target takes 7 (2d6) bludgeoning damage for every 10 feet it was thrown. If this damage would reduce the thrown target to 0 hit points, it shatters into pieces. If the target is thrown at another creature, that creature must succeed on a DC 17 Dexterity saving throw or take the same damage and be knocked prone. If there is no more humanoid creatures in the bag, the Inukpasugjuit can use any creature that has been petrified with its freezing breath.  It cannot use this ability if there is no more petrified humanoids to throw in the area.
 >
 > ***Rock.*** *Ranged Weapon Attack:* +9 to hit, range 60/240 ft., one target. *Hit:* 28 (4d10 + 6) bludgeoning damage.
