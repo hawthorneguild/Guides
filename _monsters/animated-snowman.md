@@ -38,11 +38,15 @@ ___
 >
 > **AC** 9 (can increase to 20 via Compacted Snow) **HP** 93 (11d8 + 44) **Speed** 30 ft.
 >
-> | | | MOD | SAVE | | | MOD | SAVE | | | MOD | SAVE |
-> |:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|:--|:-:|:----:|:----:|
-> |Str| 19| +4| +7|Dex| 9| -1 | +2|Con| 18| +4 | +7|
-> |Int| 1| -5 | -2|Wis| 7| -2 | +1|Cha| 1| -5 | -2|
+> |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
+> |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
+> | **Str** | 19 | +4 | +6 | **Dex** | 9 | -1 | +1 | **Con** | 18 | +4 | +6 |
+> | **Int** | 1 | -5 | -3 | **Wis** | 7 | -2 | +0 | **Cha** | 1 | -5 | -3 |
 >
+> **Damage Vulnerabilities** fire
+> **Damage Resistances** bludgeoning, piercing, and slashing
+from nonmagical attacks
+> **Damage Immunities** cold, poison, psychic
 > **Condition Immunities** Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned  
 > **Senses** Passive Perception 8  
 > **Languages** Understands the languages of its creator but can't speak  

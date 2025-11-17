@@ -26,8 +26,7 @@ ___
 > |Str| 13| +1 | +1 |Dex| 14| +2 | +2 |Con| 15| +2 | +2 |
 > |Int| 3| -4 | -4 |Wis| 12| +1 | +1 |Cha| 5| -3 | -3 |
 >
-> **Skills** N/A  
-> **Vulnerabilities** Fire  
+> **Damage Vulnerabilities** Fire  
 > **Condition Immunities** Exhaustion  
 > **Senses** Darkvision 60 ft., Passive Perception 11  
 > **Languages** ---  

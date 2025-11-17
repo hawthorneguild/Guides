@@ -38,6 +38,6 @@ ___
 >
 > ### Actions
 >
-> ***Shortsword.*** *Melee Attack Roll:* +3, reach 5ft., one target. *Hit:* 4 ($1d6 + 1$) Piercing damage.
+> ***Shortsword.*** *Melee Attack Roll:* +3, reach 5ft., one target. *Hit:* 4 (1d6 + 1) Piercing damage.
 >
 > ***Flurry (Recharge 6).*** The hollow makes four Shortsword attacks against one target.

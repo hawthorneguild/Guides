@@ -27,7 +27,7 @@ ___
 > |Int| 2| -4 | -4 |Wis| 10| +0 | +0 |Cha| 7| -2 | -2 |
 >
 > **Skills** Stealth +7  
-> **Immunities** Poison  
+> **Damage Immunities** Poison  
 > **Condition Immunities** Poisoned  
 > **Senses** Darkvision 30 ft., Passive Perception 10  
 > **Languages** None  

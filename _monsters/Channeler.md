@@ -12,9 +12,6 @@ creator: km.d
 ---
 
 ## Channeler
-
-
-
 ___
 > ## Channeler
 > *Medium Monstrosity, Neutral Evil*

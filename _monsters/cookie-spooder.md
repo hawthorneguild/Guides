@@ -48,4 +48,4 @@ ___
 >
 > ### Actions
 >
-> ***Bite.*** *Melee Attack Roll:* +5, reach 5 ft., one creature. *Hit:* 5 ($1d4 + 3$) Piercing damage.
+> ***Bite.*** *Melee Attack Roll:* +5, reach 5 ft., one creature. *Hit:* 5 (1d4 + 3) Piercing damage.

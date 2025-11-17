@@ -28,7 +28,7 @@ ___
 > |Str| 13| +1 | +1 |Dex| 6| -2 | -2 |Con| 16| +3 | +3 |
 > |Int| 3| -4 | -4 |Wis| 6| -2 | **+0** |Cha| 5| -3 | -3 |
 >
-> **Skills** N/A  
+> **Saving Throws** Wis +0 
 > **Resistances** Fire  
 > **Immunities** Poison  
 > **Condition Immunities** Poisoned  

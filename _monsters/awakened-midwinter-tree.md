@@ -39,13 +39,13 @@ ___
 > 
 > **Initiative** +2 (14)
 >
-> | | | MOD | | | MOD | | | MOD |
-> |:--|:-:|:----:|:--|:-:|:----:|:--|:-:|:----:|
-> |Str| 19| +4 |Dex| 14| +2 |Con| 15| +2 |
-> |Int| 10| +0 |Wis| 10| +0 |Cha| 7| -2 |
+> |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
+> |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
+> | **Str** | 19 | +4 | +6 | **Dex** | 14 | +2 | +4 | **Con** | 15 | +2 | +4 |
+> | **Int** | 10 | +0 | +2 | **Wis** | 10 | +0 | +2 | **Cha** | 7 | -2 | +0 |
 > 
-> **Vulnerabilities** Fire  
-> **Resistances** Bludgeoning, Piercing  
+> **Damage Vulnerabilities** Fire  
+> **Damage Resistances** Bludgeoning, Piercing  
 > **Senses** Passive Perception 10  
 > **Languages** One language known by its creator  
 > **CR** 6 (XP 2,300; PB +3)

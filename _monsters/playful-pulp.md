@@ -27,7 +27,7 @@ ___
 > |Int| 6| -2 | -2 |Wis| 12| +1 | +1 |Cha| 20| +5 | +5 |
 >
 > **Skills** Perception +3, Persuasion +7, Stealth +2  
-> **Resistances** Acid, Cold, Fire; Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't adamantine  
+> **Damage Resistances** Acid, Cold, Fire; Bludgeoning, Piercing, and Slashing from nonmagical attacks that aren't adamantine  
 > **Condition Immunities** Blinded, Charmed, Deafened, Exhaustion, Prone  
 > **Senses** Blindsight 60 ft. (blind beyond this radius), Passive Perception 13  
 > **Languages** Understands Common, Elvish, and Sylvan  

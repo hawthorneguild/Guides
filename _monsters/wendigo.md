@@ -54,9 +54,10 @@ ___
 > |Str| 22| +6 | +6 |Dex| 21| +5 | **+9** |Con| 16| +3 | **+7** |
 > |Int| 14| +2 | +2 |Wis| 15| +2 | **+6** |Cha| 19| +4 | +4 |
 >
+> **Saving Throws** Dex +9, Con +7, Wis +6
 > **Skills** Acrobatics +9, Deception +8, Perception +6, Stealth +9, Survival +6  
-> **Resistances** Bludgeoning, Piercing, and Slashing from nonmagical weapons that aren't silvered  
-> **Immunities** Cold  
+> **Damage Resistances** Bludgeoning, Piercing, and Slashing from nonmagical weapons that aren't silvered  
+> **DamageImmunities** Cold  
 > **Condition Immunities** Frightened  
 > **Senses** Blindsight 60 ft., Darkvision 120 ft., Passive Perception 16  
 > **Languages** Common, Deep Speech, Giant, Telepathy 120 ft.  
@@ -128,3 +129,13 @@ wendigo stalks it. The wendigo can only stalk one creature at a time.
 * **Maddening Whispers (1/Day)**. As a bonus action while wind walking, the wendigo whispers maddening thoughts at one creature it can see within 120 feet of it. Only the target can hear the insane whispers and invitations of the wendigo. The creature must make a Wisdom saving throw against the wendigo's spell save DC or its Wisdom score is reduced by 1d4. This reduction to an ability score lasts until it is removed by the greater restoration spell or other magic.  
 
 * **Mimicry**. The wendigo can mimic the speech of another person or the sounds made by other creatures. The wendigo must have heard the person speaking, or heard the creature make the sound, for at least 1 minute. A creature that hears the sounds can tell they are imitations with a successful Wisdom (Insight) check contested by the wendigo's Charisma (Deception) check.
+
+### Tactics
+
+Wendigos are powerful creatures that should inspire terror in characters throughout their entire adventuring careers. They must be played as mysterious and horrid creatures to make them terrifying encounters. 
+
+- A wendigo hunts over a wide region, even beyond its lair. The myths surrounding the wendigo in the area are usually only told in whispers, and commoners’ inordinate fears of such creatures can create great foreshadowing opportunities.
+- A wendigo stalks prey for days. It haunts the dreams of the weak willed, whispers temptations of betrayal using telepathy, lures away creatures from their group using deception, and it strikes when it knows it has the advantage.
+- In combat, a wendigo makes use of its speed to strike and swiftly fly out of sight, recovering from any wounds in mere moments. It takes advantage of its blindsight to strike when visibility is low, and howling when groups of prey are close together. In its lair, a wendigo uses tunnels or crevices to retreat and hide.
+- A wendigo attempts to use its **wind walk** on any grappled creature, stranding the victim in some rural area, usually miles from where it began. 
+- A wendigo despises fire and retreats from any source that threatens it. In its lair, the wendigo tries to dispose of any sources of fire first.

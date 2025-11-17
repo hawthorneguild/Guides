@@ -39,9 +39,10 @@ ___
 > |Str| 18| +4 | **+8** |Dex| 12| +1 | +1 |Con| 18| +4 | +4 |
 > |Int| 10| +0 | **+4** |Wis| 18| +4 | **+8** |Cha| 18| +4 | **+8** |
 >
+> **Saving Throws** Str +8, Int +4, Wis +8, Cha +8
 > **Skills** Deception +8, Stealth +9  
-> **Resistances** Damage from spells; Bludgeoning, Piercing, Slashing from nonmagical attacks  
-> **Immunities** Poison  
+> **Damage Resistances** Damage from spells; Bludgeoning, Piercing, Slashing from nonmagical attacks  
+> **Damage Immunities** Poison  
 > **Condition Immunities** Poisoned  
 > **Senses** Darkvision 60 ft., Passive Perception 14  
 > **Languages** Common, Druidic, Telepathy 60 ft.  

@@ -26,8 +26,7 @@ ___
 > |Str| 14| +2 | +2 |Dex| 16| +3 | +3 |Con| 15| +2 | +2 |
 > |Int| 6| -2 | -2 |Wis| 8| -1 | -1 |Cha| 5| -3 | -3 |
 >
-> **Skills** N/A  
-> **Immunities** Poison  
+> **Damage Immunities** Poison  
 > **Condition Immunities** Exhaustion, Poisoned  
 > **Senses** Darkvision 60 ft., Passive Perception 9  
 > **Languages** Understands all languages it knew in life but can't speak  

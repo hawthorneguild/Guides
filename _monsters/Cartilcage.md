@@ -27,8 +27,8 @@ ___
 > |Int| 8| -1 | -1 |Wis| 10| +0 | +0 |Cha| 14| +2 | +2 |
 >
 > **Skills** Stealth +3  
-> **Resistances** Necrotic, Piercing  
-> **Immunities** Poison  
+> **Damage Resistances** Necrotic, Piercing  
+> **Damage Immunities** Poison  
 > **Condition Immunities** Exhaustion, Poisoned  
 > **Senses** Darkvision 60 ft., Passive Perception 10  
 > **Languages** Understands all languages it knew in life but can't speak  

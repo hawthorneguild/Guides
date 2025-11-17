@@ -44,14 +44,14 @@ ___
 > 
 > **Initiative** +2 (14)
 >
-> | | | MOD | | | MOD | | | MOD |
-> |:--|:-:|:----:|:--|:-:|:----:|:--|:-:|:----:|
-> |Str| 16| +3 |Dex| 14| +2 |Con| 16| +3 |
-> |Int| 10| +0 |Wis| 14| +2 |Cha| 16| +3 |
+> |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
+> |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
+> | **Str** | 16 | +3 | +5 | **Dex** | 14 | +2 | +4 | **Con** | 16 | +3 | +5 |
+> | **Int** | 10 | +0 | +2 | **Wis** | 14 | +2 | +4 | **Cha** | 16 | +3 | +5 |
 >
 > **Skills** Deception +9, Perception +5  
-> **Resistances** Necrotic; Bludgeoning, Piercing, and Slashing from nonmagical attacks  
-> **Immunities** Cold, Poison  
+> **Damage Resistances** Necrotic; Bludgeoning, Piercing, and Slashing from nonmagical attacks  
+> **Damage Immunities** Cold, Poison  
 > **Condition Immunities** Poisoned  
 > **Senses** Darkvision 60 ft., Passive Perception 15  
 > **Languages** The languages it knew in life  

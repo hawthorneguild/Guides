@@ -34,9 +34,10 @@ ___
 > |Str| 10| +0 | +0 |Dex| 16| +3 | **+6** |Con| 16| +3 | **+6** |
 > |Int| 10| +0 | +0 |Wis| 16| +3 | **+6** |Cha| 16| +3 | +3 |
 >
+> **Saving Throws** Dex +6, Con +6, Wis +6
 > **Skills** Deception +6, Insight +6, Perception +6, Sleight of Hand +6, Stealth +6, Survival +6  
-> **Resistances** Fire, Necrotic  
-> **Immunities** Poison  
+> **Damage Resistances** Fire, Necrotic  
+> **Damage Immunities** Poison  
 > **Condition Immunities** Charmed, Exhaustion, Frightened, Paralyzed, Poisoned, Stunned  
 > **Senses** Darkvision 60 ft., Passive Perception 16  
 > **Languages** The languages it knew in life  
