@@ -602,3 +602,18 @@ The table below summarizes the different quantities associated with earth nodes 
 \- **Storage Capacity.** This value indicates the maximum capacity that an earth node can store worth of objects. (See "Storing Items" above.)
 
 \- **Time to Map.** This value indicates the typical amount of time it takes to fully map out an earth node's boundaries and layers, without factoring in additional time due to physical barriers or other obstacles.
+
+
+## Credits
+
+> *This document has been created by Luolang  in collaboration with the Lore Consultants and Rules Architects of the Hawthorne Dungeons & Dragons Guild.*
+
+> ##### Image Credits
+
+* [Crystal Cave by Jocelyn Tang](https://www.artstation.com/artwork/9Xxav)
+* [Cavern of Souls by Sam Burley](https://www.inprnt.com/gallery/samburley/mtg-cavern-of-souls/)
+* [Modifying Earth Nodes by Wizards of the Coast](https://www.dmsguild.com/en/product/28621/underdark-3-5)
+* [Node Manifestestation by Acidify Art]](https://www.artstation.com/acidify)
+
+
+
