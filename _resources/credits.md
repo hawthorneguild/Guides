@@ -18,7 +18,8 @@ order: 80
 - [The Contract - Art by Exphrasis](https://www.deviantart.com/exphrasis/art/The-Contract-624868109)
 - [Gateway of the Deep Stars - Art by plumsy460](https://www.deviantart.com/plumsy460/art/Gateway-of-the-Deep-Stars-1255313053)
 
-### Player's Guide
+---
 
-- [Tavern Brawl Image - Art by velinov](https://www.deviantart.com/velinov/art/Tavern-Brawl-96471746)
+Additional image credits at the end of applicable pages.
+
 
