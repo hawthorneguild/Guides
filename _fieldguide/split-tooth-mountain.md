@@ -54,6 +54,7 @@ The landscape is utterly alien, the usual terrain, trees and plants have melted 
 skin must make a DC 15 Constitution saving throw or be poisoned for 1d4 hours. The creature is paralyzed while poisoned in this way. Aberrations are immune to this effect.
 
 ![Bone Spire]( {{ '/assets/images/bonespire.jpg' | relative_url }} )
+<span class="image-caption"><a href="https://cdnb.artstation.com/p/assets/images/images/021/394/125/4k/logan-feliciano-bonespire-002s.jpg?1571510286">Bone Spire by logan-feliciano</a></span>
 
 #### Absolute Territory
 
@@ -133,6 +134,7 @@ Typical marrow can be as much as 20 miles square in size, with foci scattered ab
 *Cerebriotic Core.* At the center of the marrow lies a persisting Rift to the Far Realm, which itself can take any number of nightmarish forms, such as black voids or portals with tentacles sprouting from within.
 
 ![Cerebrotic Periphery](https://i.imgur.com/zbWkxLJ.png)
+<span class="image-caption">Dragon Magazine #300</span>
 
 ### Minor Properties
 
@@ -179,10 +181,8 @@ For DMs wanting to learn more about the Far Realm and add their own effects or m
 
 ## Credits
 
-> *This document has been created by Kathy in collaboration with Luolang and the Lore Consultants of the Hawthorne Dungeons & Dragons Guild.*
+*This document has been created by Kathy in collaboration with Luolang and the Lore Consultants of the Hawthorne Dungeons & Dragons Guild.*
 
-##### Image Credits
+<span class="image-caption"><a href="https://www.artstation.com/artwork/OoE9Gv">Background Image: Fantasy Landscape with a Walking Moutain by Martin Hatala</a></span>
 
-* [Bone Spire by logan-feliciano](https://cdnb.artstation.com/p/assets/images/images/021/394/125/4k/logan-feliciano-bonespire-002s.jpg?1571510286)
-* [Fantasy Landscape with a Walking Moutain by Martin Hatala](https://www.artstation.com/artwork/OoE9Gv)
 

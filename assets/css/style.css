@@ -1416,8 +1416,43 @@ tbody tr:hover {
   margin-bottom: 1em;
   line-height: 1.6;
 }
+/* ============================================
+   IMAGE CAPTIONS
+   ============================================ */
+.image-caption {
+  display: block;
+  font-style: italic;
+  font-size: 0.9em;
+  color: var(--color-text-secondary);
+  margin-top: 0.25em;
+  margin-bottom: 1.5em;
+  line-height: 1.4;
+}
 
+/* Ensure links inside captions are also italicized */
+.image-caption a {
+  font-style: italic;
+}
 
+/* Remove bottom margin from images when followed by caption */
+img:has(+ .image-caption) {
+  margin-bottom: 0.25em !important;
+}
+
+/* Tighter spacing when caption follows an image */
+img + .image-caption {
+  margin-top: 0.25em;
+}
+
+/* Dark mode adjustment */
+[data-theme="dark"] .image-caption {
+  color: var(--color-text-secondary);
+}
+
+/* Optional: Remove external link indicator from caption links */
+.image-caption a[target="_blank"]::after {
+  content: none;
+}
 /* ============================================
    17. DOCUMENTATION LAYOUT
    ============================================ */
