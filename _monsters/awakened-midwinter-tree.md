@@ -35,9 +35,7 @@ ___
 > ## Awakened Midwinter Tree
 > *Huge Plant, Unaligned*
 > 
-> **AC** 17 (natural armor) **HP** 59 (7d12 + 14) **Speed** 20 ft.
-> 
-> **Initiative** +2 (14)
+> **AC** 17 (natural armor) **HP** 59 (7d12 + 14) **Speed** 20 ft. **Initiative** +2 (12)  
 >
 > |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
 > |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|

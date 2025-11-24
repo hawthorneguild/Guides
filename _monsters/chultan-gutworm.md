@@ -24,9 +24,7 @@ ___
 > ## Chultan Gutworm
 > *Medium Monstrosity, Neutral*
 > 
-> **AC** 16 (natural armor) **HP** 66 (7d8 + 35) **Speed** 30 ft., burrow 10 ft., climb 20 ft., swim 20 ft.
-> 
-> **Initiative** +3 (17)
+> **AC** 16 (natural armor) **HP** 66 (7d8 + 35) **Speed** 30 ft., burrow 10 ft., climb 20 ft., swim 20 ft. **Initiative** +3 (13)  
 >
 > |     |     | MOD | SAVE |     |     | MOD | SAVE |     |     | MOD | SAVE |
 > |:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|:--- |:---:|:---:|:----:|
