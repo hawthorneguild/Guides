@@ -1,6 +1,7 @@
 ---
 title: Earth Nodes
 layout: doc
+toc: true
 order: 18
 background_image: /assets/images/earthnodes-background.jpg
 ---
@@ -15,15 +16,12 @@ For players, this document presents information regarding earth nodes as you may
 
 This document describes a variety of mechanics associated with earth nodes, including their use in adventures and in downtime. A player character can **only** interact with and utilize the properties of an earth node in an adventure or during downtime given the permission of and as supervised by the DM that is utilizing the earth node in their storylines.
 
-<br>
 
 ## Features of Earth Nodes
 
 Beneath the earth, pools, and streams of invisible power sometimes collect and cross into a single location, creating an underground nexus of magical energy. Such areas are known as **earth nodes**. An earth node is not by itself visible to ordinary sight, but earth nodes are often located in places that are beautiful or bizarre. As an example, a large geode or an underground cavern in the Underdark might contain an earth node within it, but such sights aren't always present. 
 
 The power of an earth node isn't limited by physical boundaries. Some earth nodes lie within large underground caverns, while others exist entirely within solid rock. Still other earth nodes may have a portion that lies within a cave or tunnel, while the rest extends into stone. Some earth nodes may extend partly or even fully into the surface above. 
-
-<br>
 
 ## Properties of Earth Nodes
 
@@ -242,32 +240,31 @@ This "node lock" can only be removed by means of a *dispel magic* spell in the a
 
 
 <div class="image-text-wrapper">
-  <div class="hierarchy-explanation" style="flex: 0 0 60%;">
-    The area around an earth node can be modified, from incorporating an earth node into a structure to opening up an earth node that resides within solid rock. However, such modifications to the area may affect the integrity of the earth node situated within it.<br><br>
+  <div class="hierarchy-explanation" style="flex: 1; min-width: 0;">
+    The area around an earth node can be modified, from incorporating an earth node into a structure to opening up an earth node that resides within solid rock. However, such modifications to the area may affect the integrity of the earth node situated within it.<br>
 
     Any physical project involving building around or modifying the area around an earth node takes the normal amount of time to accomplish such a project, as determined by the DM. However, ensuring that the earth node remains intact throughout this process requires supervision by a creature familiar with the earth node.<br><br>
 
     In the event that the project makes either no or at most minor modifications to the area in which the earth node is situated, then the earth node is unaffected by the project. However, projects which involve moderate or extensive changes to the area risk damaging the earth node.<br><br>
 
-    At the end of each workweek associated with the project, a creature that has become <b>proficient</b> in their understanding of a given earth node can make an ability check using their spellcasting ability while within the area of that earth node. A creature with the <b>Node Spellcasting</b> Supernatural Gift can instead make an Arcana check using their spellcasting ability, and a creature with the <b>Node Manifestation</b> Supernatural Gift can make an Intelligence (Arcana) check. (A creature without a spellcasting ability instead makes an Intelligence check.) A creature proficient in mason's tools that is also overseeing the project can provide Help on the ability check.<br><br>
+    At the end of each workweek associated with the project, a creature that has become <b>proficient</b> in their understanding of a given earth node can make an ability check using their spellcasting ability while within the area of that earth node. A creature with the <b>Node Spellcasting</b> Supernatural Gift can instead make an Arcana check using their spellcasting ability, and a creature with the <b>Node Manifestation</b> Supernatural Gift can make an Intelligence (Arcana) check. (A creature without a spellcasting ability instead makes an Intelligence check.) A creature proficient in mason's tools that is also overseeing the project can provide Help on the ability check. <br><br>
 
-    The DC of the ability check is equal to the node DC if the project involves moderate changes to the area as determined by the DM. If the project involves extensive changes to the area as determined by the DM, the DC for the ability check is equal to the node DC + 5. <br><br>
+    The DC of the ability check is equal to the node DC if the project involves moderate changes to the area as determined by the DM. If the project involves extensive changes to the area as determined by the DM, the DC for the ability check is equal to the node DC + 5.<br><br>
 
-    On a success, the creature is able to help reroute and smooth the flow of magical energy in the new physical arrangement as associated with the project. On a failure, the class rating of the earth node decreases by 1. An earth node whose class rating is reduced to 0 is destroyed. <br><br>
+    On a success, the creature is able to help reroute and smooth the flow of magical energy in the new physical arrangement as associated with the project. On a failure, the class rating of the earth node decreases by 1. An earth node whose class rating is reduced to 0 is destroyed.<br><br> 
 
-    If projects involving moderate or extensive changes aren't supervised, there is a cumulative 5% chance for each day of the project that the class rating of the node is reduced by 1. This chance resets to 5% after the node's class rating is reduced, before accumulating with each day once more.  <br><br>
+    If projects involving moderate or extensive changes aren't supervised, there is a cumulative 5% chance for each day of the project that the class rating of the node is reduced by 1. This chance resets to 5% after the node's class rating is reduced, before accumulating with each day once more.<br><br>
 
-    It is possible for an earth node to naturally repair itself over time, with a typical rate that a layer is regained after a number of years equal to 2 x (the earth node's current class rating). For example, a class 3 earth node that was damaged down to class 1 takes 2 years to return to class 2 and another 4 years to return to class 3.  This process can sometimes proceed more rapidly or be magically assisted, as determined by the DM. <br><br>
-
-    In the case of the earth node's destruction, it typically reconstitutes itself as a class 1 earth node within 1 mile of the original node after 2d10 days.
-	
-	<span class="image-caption">Image: A Wizard summons the power of an earth node, Forgotten Realms Underdark</span>
-
-	
-  </div>  
+    </div>  
   <img src="https://i.imgur.com/pfAp3Pa.png" alt="Description" class="hierarchy-image" style="flex: 0 0 20%;">
-  
 </div>
+<span class="image-caption">Image: A Wizard summons the power of an earth node, Forgotten Realms Underdark</span>
+
+It is possible for an earth node to naturally repair itself over time, with a typical rate that a layer is regained after a number of years equal to 2 x (the earth node's current class rating). For example, a class 3 earth node that was damaged down to class 1 takes 2 years to return to class 2 and another 4 years to return to class 3.  This process can sometimes proceed more rapidly or be magically assisted, as determined by the DM.
+
+In the case of the earth node's destruction, it typically reconstitutes itself as a class 1 earth node within 1 mile of the original node after 2d10 days.
+  
+
 
 ## Creating Earth Nodes
 
@@ -374,27 +371,17 @@ The specifics of how an evil node affects the region it is within as well as cre
 
 #### *Sample Evil Node Spells*
 
-<table style="text-align:center;" border=1>
-
-<tr><th>Earth Node Class /<br> Maximum Spell Level</th><th>Evil Node Spell</th></tr>
-
-<tr><td>1</td><td>inflict wounds</td></tr>
-
-<tr><td>2</td><td>ray of enfeeblement</td></tr>
-
-<tr><td>3</td><td>animate dead</td></tr>
-
-<tr><td>4</td><td>blight</td></tr>
-
-<tr><td>5</td><td>enervation</td></tr>
-
-<tr><td>6</td><td>circle of death</td></tr>
-
-<tr><td>7</td><td>finger of death</td></tr>
-
-<tr><td>8</td><td>Abi-Dalzim's horrid wilting</td></tr>
-
-<tr><td>9</td><td>power word kill</td></tr></table>
+| Earth Node Class / Maximum Spell Level | Evil Node Spell |
+|:---:|:---|
+| 1 | inflict wounds |
+| 2 | ray of enfeeblement |
+| 3 | animate dead |
+| 4 | blight |
+| 5 | enervation |
+| 6 | circle of death |
+| 7 | finger of death |
+| 8 | Abi-Dalzim's horrid wilting |
+| 9 | power word kill |
 
 **Imprisonment** <br>Evil nodes can contain creatures following the same rules for storing items, with the following differences. An evil node can contain any number of creatures in its extradimensional space whose combined total Hit Dice does not exceed 3 x (the evil node's class)<sup>2</sup>. (For example, a class 3 evil node can contain up to 27 Hit Dice worth of creatures) Storing creatures inside an evil node does not count against its capacity for storing objects nor vice versa. 
 
@@ -449,27 +436,18 @@ These portals last indefinitely but otherwise behave similarly to and have prope
 
 #### *Sample Shadow Node Spells*
 
-<table style="text-align:center;" border=1>
+| Earth Node Class / Maximum Spell Level | Shadow Node Spell |
+|:---:|:---|
+| 1 | silent image |
+| 2 | darkness |
+| 3 | summon shadowspawn |
+| 4 | shadow of moil |
+| 5 | creation |
+| 6 | eyebite |
+| 7 | mirage arcane |
+| 8 | maddening darkness |
+| 9 | weird |
 
-<tr><th>Earth Node Class /<br> Maximum Spell Level</th><th>Shadow Node Spell</th></tr>
-
-<tr><td>1</td><td>silent image</td></tr>
-
-<tr><td>2</td><td>darkness</td></tr>
-
-<tr><td>3</td><td>summon shadowspawn</td></tr>
-
-<tr><td>4</td><td>shadow of moil</td></tr>
-
-<tr><td>5</td><td>creation</td></tr>
-
-<tr><td>6</td><td>eyebite</td></tr>
-
-<tr><td>7</td><td>mirage arcane</td></tr>
-
-<tr><td>8</td><td>maddening darkness</td></tr>
-
-<tr><td>9</td><td>weird</td></tr></table>
 
 **Empowerment**  <br>A creature with the **Node Spellcasting** or the **Node Manifestation** Supernatural Gift that has become **proficient** in their understanding of a given shadow node (following the same rules as described under "Studying Earth Nodes" on page 4) can spend a short rest within the area attempting to draw upon its energy to strengthen themselves. At the end of the short rest, the creature can make an Arcana check using their spellcasting ability against the node DC of the shadow node. (A mystic can use their Intelligence modifier for the Arcana check) 
 
@@ -567,29 +545,17 @@ The table below summarizes the different quantities associated with earth nodes 
 
 #### *Earth Node Properties*
 
-<table border="1" style="text-align:center">
-
-  <tr><th>Class</th><th>Layer Width</th><th>Node Diameter</th><th>Node DC</th><th>Enhanced Spellcasting Bonus</th><th>Psionic Mastery Pool</th><th>Portal to Nearby Earth Node Range</th><th>Portal Diameter</th><th>Portal Duration</th><th>Portal Max Range</th><th>Storage Capacity</th><th>Time to Map</th></tr>
-
-  <tr><td>1</td><td>5 to 30 feet</td><td>10 to 60 feet</td><td>14</td><td>+1 spell level</td><td>9 psi points</td><td>100 miles</td><td>10 feet</td><td>1 minute</td><td>100 miles</td><td>10 cubic feet</td><td>10 minutes</td></tr>
-
-  <tr><td>2</td><td>10 to 40 feet</td><td>40 to 160 feet</td><td>16</td><td>+1 spell level</td><td>10 psi points</td><td>200 miles</td><td>10 feet</td><td>3 minutes</td><td>300 miles</td><td>40 cubic feet</td><td>30 minutes</td></tr>
-
-  <tr><td>3</td><td>20 to 80 feet</td><td>120 to 480 feet</td><td>18</td><td>+2 spell levels</td><td>11 psi points</td><td>300 miles</td><td>20 feet</td><td>5 minutes</td><td>500 miles</td><td>90 cubic feet</td><td>60 minutes</td></tr>
-
-  <tr><td>4</td><td>30 to 120 feet</td><td>240 to 960 feet</td><td>20</td><td>+2 spell levels</td><td>12 psi points</td><td>400 miles</td><td>20 feet</td><td>7 minutes</td><td>700 miles</td><td>160 cubic feet</td><td>100 minutes</td></tr>
-
-  <tr><td>5</td><td>40 to 160 feet</td><td>400 to 1,600 feet</td><td>22</td><td>+3 spell levels</td><td>13 psi points</td><td>500 miles</td><td>30 feet</td><td>9 minutes</td><td>900 miles</td><td>250 cubic feet</td><td>150 minutes</td></tr>
-
-  <tr><td>6</td><td>50 to 200 feet</td><td>600 to 2,400 feet</td><td>24</td><td>+3 spell levels</td><td>14 psi points</td><td>600 miles</td><td>30 feet</td><td>11 minutes</td><td>1,100 miles</td><td>360 cubic feet</td><td>210 minutes</td></tr>
-
-  <tr><td>7</td><td>60 to 240 feet</td><td>840 to 3,360 feet</td><td>26</td><td>+4 spell levels</td><td>15 psi points</td><td>700 miles</td><td>40 feet</td><td>13 minutes</td><td>1,300 miles</td><td>490 cubic feet</td><td>280 minutes</td></tr>
-
-  <tr><td>8</td><td>70 to 280 feet</td><td>1,120 to 4,480 feet</td><td>28</td><td>+4 spell levels</td><td>16 psi points</td><td>800 miles</td><td>40 feet</td><td>15 minutes</td><td>1,500 miles</td><td>640 cubic feet</td><td>360 minutes</td></tr>
-
-  <tr><td>9</td><td>80 to 320 feet</td><td>1,440 to 5,760 feet</td><td>30</td><td>+5 spell levels</td><td>17 psi points</td><td>900 miles</td><td>50 feet</td><td>17 minutes</td><td>1,700 miles</td><td>810 cubic feet</td><td>450 minutes</td></tr></table>
-
-<br>
+|Class|	Layer Width|	Node Diameter|	Node DC|	Enhanced Spellcasting Bonus|	Psionic Mastery Pool|	Portal to Nearby Earth Node Range|	Portal Diameter|	Portal Duration|
+|:|	:|	:-------------------|	:-------|	:---------------------------|	:--------------------|	:---------------------------------|	:---------------|	:---------------|
+|1|	5 to 30 feet|	10 to 60 feet|	14|	+1 spell level|	9 psi points|	100 miles|	10 feet|	1 minute|
+|2|	10 to 40 feet|	40 to 160 feet|	16|	+1 spell level|	10 psi points|	200 miles|	10 feet|	3 minutes|
+|3|	20 to 80 feet|	120 to 480 feet|	18|	+2 spell levels|	11 psi points|	300 miles|	20 feet|	5 minutes|
+|4|	30 to 120 feet|	240 to 960 feet|	20|	+2 spell levels|	12 psi points|	400 miles|	20 feet|	7 minutes|
+|5|	40 to 160 feet|	400 to 1,600 feet|	22|	+3 spell levels|	13 psi points|	500 miles|	30 feet|	9 minutes|
+|6|	50 to 200 feet|	600 to 2,400 feet|	24|	+3 spell levels|	14 psi points|	600 miles|	30 feet|	11 minutes|
+|7|	60 to 240 feet|	840 to 3,360 feet|	26|	+4 spell levels|	15 psi points|	700 miles|	40 feet|	13 minutes|
+|8|	70 to 280 feet|	1,120 to 4,480 feet|	28|	+4 spell levels|	16 psi points|	800 miles|	40 feet|	15 minutes|
+|9|	80 to 320 feet|	1,440 to 5,760 feet|	30|	+5 spell levels|	17 psi points|	900 miles|	50 feet|	17 minutes|
 
 \- **Layer Width.** This value indicates the thickness of a given layer of the earth node.
 
