@@ -3,6 +3,16 @@
 const MonsterCalculator = (function() {
     'use strict';
 
+    const XP_TABLE = {
+        "0": 10, "1/8": 25, "1/4": 50, "1/2": 100,
+        "1": 200, "2": 450, "3": 700, "4": 1100, "5": 1800,
+        "6": 2300, "7": 2900, "8": 3900, "9": 5000, "10": 5900,
+        "11": 7200, "12": 8400, "13": 10000, "14": 11500, "15": 13000,
+        "16": 15000, "17": 18000, "18": 20000, "19": 22000, "20": 25000,
+        "21": 33000, "22": 41000, "23": 50000, "24": 62000, "25": 75000,
+        "26": 90000, "27": 105000, "28": 120000, "29": 135000, "30": 155000
+    };
+
     /**
      * Calculate ability modifier from ability score
      * @param {number} score - Ability score (1-30)
@@ -25,17 +35,12 @@ const MonsterCalculator = (function() {
 
     /**
      * Get proficiency bonus based on Challenge Rating
-     * Based on D&D 5e rules
-     * @param {string|number} cr - Challenge Rating (can be fraction like "1/4")
-     * @returns {number} Proficiency bonus (2-9)
      */
     function getProficiencyBonus(cr) {
         let crNum = 0;
         
         try {
             const cleanCr = String(cr).replace(/\s/g, '');
-            
-            // Handle fractions
             if (cleanCr.includes('/')) {
                 const parts = cleanCr.split('/');
                 if (parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1]) && parts[1] != 0) {
@@ -60,39 +65,22 @@ const MonsterCalculator = (function() {
     }
 
     /**
-     * Calculate saving throw modifier
-     * Always calculates from ability score + proficiency (ignores override for calculation,
-     * but the override value is still tracked for display purposes)
-     * @param {number} abilityScore - Ability score
-     * @param {number} proficiencyBonus - Proficiency bonus
-     * @param {string} override - Optional override value (tracked but not used in calculation)
-     * @returns {string} Formatted saving throw modifier
+     * Get Experience Points based on CR
      */
-    function calculateSave(abilityScore, proficiencyBonus, override = '') {
-        // Always calculate: ability modifier + proficiency
-        // Override parameter exists but is not used for calculation
-        const abilityMod = calculateModifier(abilityScore);
-        const saveBonus = abilityMod + proficiencyBonus;
-        return formatModifier(saveBonus);
+    function getExperiencePoints(cr) {
+        const cleanCr = String(cr).trim();
+        const xp = XP_TABLE[cleanCr] || 0;
+        return xp.toLocaleString();
     }
 
     /**
      * Calculate Initiative 
-     * @param {number} dexScore - Dexterity score
-     * @param {string|number} cr - Challenge Rating (for PB)
-     * @param {number|string} profLevel - 0=None, 1=Proficient, 2=Expertise
-     * @returns {Object} { mod, formatted, score }
      */
     function calculateInitiative(dexScore, cr, profLevel) {
         const dexMod = calculateModifier(dexScore);
         const pb = getProficiencyBonus(cr);
         const level = parseInt(profLevel) || 0;
-        
-        // Init Mod = Dex Mod + (PB * level)
         const totalMod = dexMod + (pb * level);
-        
-        // Init Score = 10 + Init Mod
-        // (Similar to Passive Perception, but for Initiative)
         const score = 10 + totalMod;
 
         return {
@@ -104,8 +92,8 @@ const MonsterCalculator = (function() {
 
     /**
      * Calculate all ability modifiers and saves for a monster
-     * @param {Object} state - Monster state with ability scores and save overrides
-     * @returns {Object} Object with calculated values for each ability
+     * UPDATED: Now defaults 'save' to the Modifier. 
+     * Uses 'saveOverride' for the 'save' property ONLY if provided.
      */
     function calculateAllAbilities(state) {
         const proficiencyBonus = getProficiencyBonus(state.cr || 0);
@@ -116,13 +104,22 @@ const MonsterCalculator = (function() {
             const score = state[key] || 10;
             const mod = calculateModifier(score);
             const saveOverride = state[key + 'Save'] || '';
-            
+            const hasOverride = !!(saveOverride && saveOverride.trim());
+
+            // Determine effective save: Use override if present, else use modifier
+            let effectiveSave;
+            if (hasOverride) {
+                effectiveSave = saveOverride;
+            } else {
+                effectiveSave = formatModifier(mod);
+            }
+
             abilities[key] = {
                 score: score,
                 mod: mod,
                 formattedMod: formatModifier(mod),
-                save: calculateSave(score, proficiencyBonus, saveOverride), // This is still (Mod + PB)
-                hasOverride: !!(saveOverride && saveOverride.trim()),
+                save: effectiveSave, // Used in the table display
+                hasOverride: hasOverride,
                 saveOverride: saveOverride
             };
         });
@@ -135,7 +132,7 @@ const MonsterCalculator = (function() {
         calculateModifier,
         formatModifier,
         getProficiencyBonus,
-        calculateSave,
+        getExperiencePoints,
         calculateInitiative,
         calculateAllAbilities
     };
