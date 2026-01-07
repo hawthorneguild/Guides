@@ -5,8 +5,7 @@
  * Location: \assets\js\monster\views\monster-library.js
  */
 
-// FIX 1: Correct path (up one level) and function name (matches monster-service.js)
-import { getMonsters } from '../monster-service.js';
+import { getMonsters } from '../../monster/monster-service.js';
 
 export async function renderMonsterLibrary(container) {
     // 1. View Cleanup
@@ -72,10 +71,10 @@ export async function renderMonsterLibrary(container) {
                     <option value="">All</option>
                     <option value="Tiny">Tiny</option>
                     <option value="Small">Small</option>
-                    <option value="Medium">Med</option>
+                    <option value="Medium">Medium</option>
                     <option value="Large">Large</option>
                     <option value="Huge">Huge</option>
-                    <option value="Gargantuan">Garg</option>
+                    <option value="Gargantuan">Gargantuan</option>
                 </select>
             </div>
 
