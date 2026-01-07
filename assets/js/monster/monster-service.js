@@ -1,59 +1,35 @@
 /**
  * monster-service.js
- * * Data Access Layer (DAL) for the application.
+ * Service to interact with Supabase for Monster data.
+ * Location: \assets\js\monster\monster-service.js
  */
 
-import { supabase } from './monster-app.js';
+// Import the client config (Go up one level)
+import { supabase } from '../supabaseClient.js';
 
 /**
- * Fetch all Live monsters for the Library.
- * * UPDATED: Fetches Discord Display Name via Foreign Key join.
+ * Fetches the list of all live monsters for the library view.
  */
-export async function getLiveMonsters() {
-    // We select the discord_users table. 
-    // Note: If you renamed your foreign key, replace 'monsters_creator_discord_id_fkey' 
-    // with the actual constraint name found in your Supabase Table settings.
-    const { data, error } = await supabase
+export async function getMonsters() {
+    let { data, error } = await supabase
         .from('monsters')
-        .select(`
-            row_id, name, cr, size, species, usage, slug, image_url, tags,
-            monster_habitats (
-                lookup_habitats!monster_habitats_habitat_id_fkey ( name )
-            ),
-            discord_users ( display_name ) 
-        `)
+        .select('name, slug, species, cr, image_url, row_id, usage, size, alignment')
         .eq('is_live', true)
-        .order('name', { ascending: true });
-
+        .order('name');
+    
     if (error) {
-        console.error('Error fetching monster library:', error);
+        console.error('Error fetching monsters:', error);
         return [];
     }
-
-    // Process data to flatten structure
-    return data.map(monster => {
-        const flatHabitats = monster.monster_habitats 
-            ? monster.monster_habitats.map(mh => mh.lookup_habitats?.name).filter(Boolean)
-            : [];
-            
-        // Flatten the joined user object to a simple string property
-        const creatorName = monster.discord_users?.display_name || 'Unknown';
-
-        return {
-            ...monster,
-            habitats: flatHabitats,
-            creator_name: creatorName
-        };
-    });
+    return data;
 }
 
 /**
- * Fetch full monster details by Slug.
- * * Uses a "Two-Step" lookup or direct join if permissions allow.
+ * Fetches a single monster by slug, including its features.
  */
 export async function getMonsterBySlug(slug) {
-    // 1. Get Core Monster Data
-    const { data: monster, error } = await supabase
+    // 1. Fetch the Monster Core Data
+    let { data: monster, error } = await supabase
         .from('monsters')
         .select('*')
         .eq('slug', slug)
@@ -61,36 +37,24 @@ export async function getMonsterBySlug(slug) {
         .single();
 
     if (error || !monster) {
-        if (error) console.error(`Error fetching monster core for slug "${slug}":`, error);
+        console.error('Error fetching monster:', error);
         return null;
     }
 
-    // 2. Get Creator Name via new Discord ID
-    let creatorName = 'Unknown';
-    if (monster.creator_discord_id) {
-        // We fetch from the new table
-        const { data: userData } = await supabase
-            .from('discord_users')
-            .select('display_name')
-            .eq('discord_id', monster.creator_discord_id)
-            .single();
-            
-        if (userData) {
-            creatorName = userData.display_name;
-        }
-    }
-
-    // 3. Get Related Features
-    const { data: features } = await supabase
+    // 2. Manually Fetch Features
+    // We query the features table separately using parent_row_id.
+    const { data: features, error: featureError } = await supabase
         .from('monster_features')
         .select('*')
         .eq('parent_row_id', monster.row_id)
         .order('display_order', { ascending: true });
 
-    // 4. Return Combined Object
-    return { 
-        ...monster, 
-        features: features || [],
-        creator_name: creatorName 
-    };
+    if (featureError) {
+        console.warn('Error fetching features:', featureError);
+        monster.features = [];
+    } else {
+        monster.features = features || [];
+    }
+
+    return monster;
 }

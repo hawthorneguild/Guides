@@ -1,92 +1,93 @@
 /**
  * monster-app.js
- * * Main entry point for the Monster Manual application.
- * Handles:
- * 1. Supabase Client Initialization
- * 2. Hash-based Routing (SPA)
- * 3. View Orchestration
+ * Entry point for the application.
+ * Location: \assets\js\monster\monster-app.js
  */
 
-import { renderMonsterLibrary } from './views/monster-library.js';
+// Import the client config (Go up one level)
+import { supabase } from '../supabaseClient.js'; 
+
+// Import Views (Look in current folder's 'views' subfolder)
+import { renderMonsterLibrary } from './views/monster-library.js'; 
 import { renderMonsterDetail } from './views/monster-detail.js';
 
-// --- Supabase Configuration ---
-// The SUPABASE_URL and ANON_KEY are exposed to the client.
-// Security is handled via Row Level Security (RLS) policies on the backend,
-// ensuring users can only access public 'live' data.
-const SUPABASE_URL = 'https://iepqxczcyvrxcbyeiscc.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImllcHF4Y3pjeXZyeGNieWVpc2NjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQzNjU2MDEsImV4cCI6MjA3OTk0MTYwMX0.9fK4TppNy7IekO3n4Uwd37dbqMQ7KRhFkex_P_JSeVA';
+// --- Router Configuration ---
 
-export const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-
-// --- Route Definitions ---
-// Maps exact hash paths to their specific render functions.
 const routes = {
     '/': renderMonsterLibrary,
-    '/monsters': renderMonsterLibrary
-    // Dynamic routes (like /:slug) are handled logically in the router function
+    '/monster/:slug': renderMonsterDetail
 };
 
 /**
- * Main Router Function
- * * Inspects the window.location.hash to determine which view to render.
- * Logic Hierarchy:
- * 1. OAuth Redirects: Cleans up URL fragments from Supabase Auth.
- * 2. Exact Matches: Checks static routes defined in `routes` object.
- * 3. Dynamic Slugs: Assumes any other "/string" is a monster slug.
- * 4. Fallback: Redirects to home/library if no match found.
+ * Parses the current URL hash to find the matching route and parameters.
  */
-async function router() {
-    const app = document.getElementById('app');
+function getRouteInfo() {
+    const hash = window.location.hash.slice(1) || '/';
     
-    // Normalize hash: remove the '#' symbol. Default to '/' if empty.
-    let hash = window.location.hash.slice(1) || '/';
-    
-    // Handle Supabase OAuth redirects (clears tokens from URL after login)
-    if (hash.includes('access_token')) {
-        window.location.hash = '/';
-        return;
-    }
-
-    let matchedRenderer = null;
-    let params = {};
-
-    // 1. Check for Exact Route Matches
+    // 1. Exact Match
     if (routes[hash]) {
-        matchedRenderer = routes[hash];
-    } 
-    // 2. Handle Dynamic Monster Slugs (e.g., #/ancient-sword-dragon)
-    // We assume any non-exact match starting with '/' is a monster detail request.
-    else if (hash.startsWith('/')) {
-        const slug = hash.slice(1); // Extract "ancient-sword-dragon" from "/ancient-sword-dragon"
-        
-        if (slug) {
-            matchedRenderer = renderMonsterDetail;
-            params = { slug };
-        }
-    } 
-    // 3. Fallback / Default Route
-    else {
-        matchedRenderer = routes['/'];
+        return { handler: routes[hash], params: {} };
     }
 
-    // Render the View
-    app.innerHTML = '<div class="loading">Loading...</div>';
-    
-    if (matchedRenderer) {
-        try {
-            await matchedRenderer(app, params);
-        } catch (error) {
-            console.error("View rendering failed:", error);
-            app.innerHTML = '<div class="error">Sorry, something went wrong loading this page.</div>';
+    // 2. Pattern Match (e.g. /monster/the-bitter-maiden)
+    for (const route in routes) {
+        if (route.includes(':')) {
+            const routeParts = route.split('/');
+            const hashParts = hash.split('/');
+
+            if (routeParts.length === hashParts.length) {
+                const params = {};
+                let match = true;
+
+                for (let i = 0; i < routeParts.length; i++) {
+                    if (routeParts[i].startsWith(':')) {
+                        params[routeParts[i].slice(1)] = hashParts[i];
+                    } else if (routeParts[i] !== hashParts[i]) {
+                        match = false;
+                        break;
+                    }
+                }
+
+                if (match) {
+                    return { handler: routes[route], params };
+                }
+            }
         }
-    } else {
-        app.innerHTML = '<h2>404 - Page Not Found</h2>';
     }
+
+    // Fallback: Default to library
+    return { handler: renderMonsterLibrary, params: {} };
+}
+
+/**
+ * Main router handler
+ */
+async function handleRoute() {
+    const app = document.getElementById('app');
+    const { handler, params } = getRouteInfo();
+
+    // Clear current content
+    app.innerHTML = '';
+    
+    // Render the new view
+    await handler(app, params);
 }
 
 // --- Initialization ---
-// Listen for hash changes to update view without reloading page
-window.addEventListener('hashchange', router);
-// Handle initial load
-window.addEventListener('load', router);
+
+function init() {
+    window.addEventListener('hashchange', handleRoute);
+    window.addEventListener('load', handleRoute);
+    
+    // Internal link delegation
+    document.body.addEventListener('click', e => {
+        const link = e.target.closest('[data-link]');
+        if (link) {
+            e.preventDefault();
+            window.location.hash = link.getAttribute('href'); 
+        }
+    });
+}
+
+// Start
+init();
