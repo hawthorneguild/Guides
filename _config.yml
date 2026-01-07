@@ -24,9 +24,6 @@ collections:
   faq:
     output: true
     permalink: /faq/:path/
-  monsters:
-    output: true
-    permalink: /monster-compendium/:title/
   help:
     output: true
     permalink: /help/:path/
@@ -75,19 +72,10 @@ navigation:
   # =========================================================
   # Monster Compendium Section
   #
-  # Note that this is setup differently because the dynamic content generator in the compendium means these files are .html files, not markdown.
-  # Repeat this pattern for any future sections that need dynamic content generation.
   # =========================================================
 
   - title: "Monster Compendium"
-    sections:
-      - title: "Monster Compendium"
-        url: /monster-compendium/
-      - title: "Submit A Monster"
-        url: /monster-compendium/monsters-submit/
-      - title: "Statblock Builder"
-        url: /monster-compendium/generator/
-
+    url: /monsters/
 
   - title: "Adventure Locations"
     collection: fieldguide
