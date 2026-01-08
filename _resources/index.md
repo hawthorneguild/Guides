@@ -5,7 +5,7 @@ order: 1
 background_image: 
 ---
 
-{% assign sorted_guides = site.rules | sort: 'order' %}
+{% assign sorted_guides = site.resources | sort: 'order' %}
 <ul>
   {% for doc in sorted_guides %}
     {% if doc.url != page.url %}
