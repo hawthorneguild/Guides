@@ -30,14 +30,174 @@ Hawthorne is ruled by a council under the leadership of the current guild leader
 
 ### Hawthorne Location on Faerun's Sword Coast
 
-![Hawthorne Location](/Guides/assets/images/hawthorne-sword-coast.jpg)
-<span class="image-caption">Map of Sword Coast by Wizards of the Coast, Hawthorne location added by @salah_ad_din</span>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
+<div id="embed-map" style="width: 100%; height: 600px; border: 2px solid var(--color-border); border-radius: 4px; z-index: 1;"></div>
 
-### Map of Hawthorne
+<script type="module">
+    import { supabase } from "{{ '/assets/js/supabaseClient.js' | relative_url }}";
 
-![City of Hawthorne]({{'/assets/images/hawthorne-city-map.jpg' | relative_url}})
-<span class="image-caption">Hawthorne Map by Kathy in collaboration with the Lore team</span>
+    // --- 1. CONFIGURATION ---
+    const mapWidth = 4096;
+    const mapHeight = 2918;
+    const mapUrl = "{{ '/assets/images/faerun-map.png' | relative_url }}";
+    
+    // --- ZOOM SETTINGS ---
+    // Format: [Y-Coordinate, X-Coordinate]
+    const initialCenter = [1848, 1339]; 
+    const initialZoom = 1; 
+
+    // FILTER SETTINGS: 'all' or 'home_only'
+    const filterMode = 'home_only'; 
+
+    // --- 2. DEFINE ICONS ---
+    
+    // Default blue pin
+    const defaultIcon = new L.Icon.Default();
+
+    // Custom "Home" Icon (Gold Star / House style)
+    const homeIcon = L.divIcon({
+        className: 'custom-div-icon',
+        html: `<div style="display: flex; align-items: center; justify-content: center;">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="black" stroke="white" stroke-width="2" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                </svg>
+               </div>`,
+        iconSize: [32, 32],
+        iconAnchor: [16, 16],
+        popupAnchor: [0, -16]
+    });
+
+    // --- 3. INITIALIZE MAP ---
+    const map = L.map('embed-map', {
+        crs: L.CRS.Simple,
+        minZoom: -2,       
+        maxZoom: 3,
+        zoomSnap: 0.5,
+        scrollWheelZoom: false, 
+        attributionControl: false
+    }).setView(initialCenter, initialZoom);
+
+    const bounds = [[0, 0], [mapHeight, mapWidth]];
+    L.imageOverlay(mapUrl, bounds).addTo(map);
+    map.setMaxBounds(bounds);
+
+    // --- 4. FETCH & RENDER PINS ---
+    async function loadPins() {
+        try {
+            // We fetch all locations, then filter in memory for flexibility
+            const { data: locations, error } = await supabase.from('locations').select('*');
+            
+            if (error) console.error("Supabase Error:", error);
+            
+            if (locations) {
+                locations.forEach(loc => {
+                    // FILTER LOGIC
+                    if (filterMode === 'home_only' && !loc.is_home) {
+                        return; // Skip this pin
+                    }
+                    addMarkerToMap(loc);
+                });
+            }
+        } catch (err) {
+            console.error("Map Load Error:", err);
+        }
+    }
+
+    function addMarkerToMap(loc) {
+        // Choose Icon based on DB column
+        const iconToUse = loc.is_home ? homeIcon : defaultIcon;
+        
+        // Add Marker
+        const marker = L.marker([loc.y, loc.x], { icon: iconToUse }).addTo(map);
+        
+        // Popup Content
+        const popupContent = `
+            <div style="min-width: 150px; font-family: var(--font-body, sans-serif); color: #333;">
+                <h3 style="margin-top:0; border-bottom: 1px solid #ccc; color: var(--color-primary, #58180D);">
+                    ${loc.is_home ? '🏠 ' : ''}${loc.name}
+                </h3>
+                <p style="margin: 10px 0;">${loc.description || ''}</p>
+                ${loc.link_url ? `<a href="${loc.link_url}" target="_blank" style="color: var(--color-secondary, #822000);">Read Lore &raquo;</a>` : ''}
+            </div>
+        `;
+        
+        marker.bindPopup(popupContent);
+        
+        // Optional: Open the Home popup automatically on load
+        if (loc.is_home) {
+            marker.openPopup();
+        }
+    }
+
+    loadPins();
+</script>
+<span class="image-caption">Interactive Map of Faerûn showing the location of Hawthorne.</span>
+
+<p>
+    See Also: 
+    <a href="#" onclick="document.getElementById('map-modal').style.display='flex'; return false;">
+        Hawthorne Location Map with Connecting Roads (View Image)
+    </a>
+</p>
+
+<div id="map-modal" class="modal-overlay" onclick="this.style.display='none'">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <span class="close-btn" onclick="document.getElementById('map-modal').style.display='none'">&times;</span>
+        
+        <img src="{{ '/assets/images/hawthorne-sword-coast.jpg' | relative_url }}" alt="Sword Coast Map" style="width: 100%; height: auto; border: 2px solid var(--color-border);">
+        
+        <span class="image-caption">Map of Sword Coast by Wizards of the Coast, Hawthorne location added by @salah_ad_din</span>
+    </div>
+</div>
+
+<style>
+    /* Dark background overlay */
+    .modal-overlay {
+        display: none; /* Hidden by default */
+        position: fixed;
+        z-index: 10000; /* Sit on top of everything including header */
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.85); /* Black w/ opacity */
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        backdrop-filter: blur(5px);
+    }
+
+    /* The image container box */
+    .modal-content {
+        background-color: var(--color-bg-light);
+        padding: 15px;
+        border-radius: 4px;
+        max-width: 90%;
+        max-height: 90vh;
+        overflow-y: auto;
+        position: relative;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    /* The Close Button (X) */
+    .close-btn {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        color: var(--color-text-secondary);
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        line-height: 1;
+    }
+
+    .close-btn:hover {
+        color: var(--color-primary);
+    }
+</style>
+
 
 ## Hawthorne Guild Rules
 
