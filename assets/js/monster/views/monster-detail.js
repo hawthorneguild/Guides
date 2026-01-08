@@ -5,8 +5,7 @@
  * 1. Fetching full monster data.
  * 2. Calculating derived D&D stats.
  * 3. Rendering the responsive layout.
- * 
- * Location: \assets\js\monster\views\monster-detail.js
+ * * Location: \assets\js\monster\views\monster-detail.js
  */
 
 import { getMonsterBySlug } from '../monster-service.js';
@@ -106,17 +105,21 @@ export async function renderMonsterDetail(container, params) {
                     <p><em>${monster.size} ${monster.species}, ${alignmentText}</em></p>
                     <hr>
                     
-                    <div class="stat-grid-container">
-                        <div class="stat-cell-ac">
-                            <strong>AC</strong> ${monster.ac} ${monster.conditional_ac || ''}
+                    <div class="stats-container">
+                        <div class="stat-row-split">
+                            <div class="stat-item">
+                                <strong>AC</strong> ${monster.ac} ${monster.conditional_ac || ''}
+                            </div>
+                            <div class="stat-item">
+                                <strong>Initiative</strong> ${formatInitiative(monster.ability_scores.DEX, monster.init_prof, pb)}
+                            </div>
                         </div>
-                        <div class="stat-cell-init">
-                            <strong>Initiative</strong> ${formatInitiative(monster.ability_scores.DEX, monster.init_prof, pb)}
-                        </div>
-                        <div class="stat-cell-hp">
+
+                        <div class="stat-row">
                             <strong>HP</strong> ${calculateHPString(monster.hit_dice_num, monster.hit_dice_size, monster.hp_modifier)}
                         </div>
-                        <div class="stat-cell-speed">
+
+                        <div class="stat-row">
                             <strong>Speed</strong> ${monster.speed}
                         </div>
                     </div>
@@ -135,9 +138,9 @@ export async function renderMonsterDetail(container, params) {
                     
                     ${monster.senses ? `<p><strong>Senses</strong> ${monster.senses}</p>` : ''}
                     <p><strong>Languages</strong> ${monster.languages || '—'}</p>
+                    
                     <p>
-                        <strong>Challenge</strong> ${formatCR(monster.cr)} (${xp} XP) 
-                        <strong>PB</strong> +${pb}
+                        <strong>CR</strong> ${formatCR(monster.cr)} (${xp} XP; <strong>PB</strong> +${pb})
                     </p>
 
                     ${renderFeatureBucket(features.Trait, 'Traits')}
@@ -215,8 +218,29 @@ export async function renderMonsterDetail(container, params) {
                 margin-bottom: 0.2em;
             }
             
-            /* Base paragraph style for features */
-            .feature-item p { display: inline-block; margin-bottom: 0.5em; }
+            /* --- STAT BLOCK ROWS --- */
+            .stat-row, .stat-row-split {
+                margin: 6px 0; 
+                font-size: 1em;
+                line-height: 1.4;
+                color: var(--color-text);
+            }
+
+            /* 50% Split for AC/Initiative */
+            .stat-row-split {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+            
+            /* --- FEATURE TEXT FIX --- */
+            /* Force feature text to normal (non-italic) so Markdown works,
+               but blockquote defaults don't override it. */
+            .feature-item p { 
+                display: inline-block; 
+                margin-bottom: 0.5em; 
+                font-style: normal !important; 
+            }
 
             .feature-item li p { display: block; margin-bottom: 0; }
 
@@ -241,6 +265,12 @@ export async function renderMonsterDetail(container, params) {
 
                 .monster-image-container {
                     max-width: 100%;
+                }
+            }
+
+            @media (max-width: 400px) {
+                .stat-row-split {
+                    grid-template-columns: 1fr; /* Stack on very small screens */
                 }
             }
         </style>
@@ -284,11 +314,27 @@ function calculateHPString(num, size, mod) {
     return `${avg} (${num}d${size}${modStr})`;
 }
 
+/**
+ * Formats Initiative as: Modifier (Score)
+ * Formula: 10 + Dex Mod + Proficiency (if applicable)
+ * Example Output: +3 (13)
+ */
 function formatInitiative(dexScore, proficiency, pb) {
-    let mod = calculateMod(dexScore);
-    if (proficiency === 'Proficient') mod += pb;
-    if (proficiency === 'Expert') mod += (pb * 2);
-    return `${formatSign(mod)} (${dexScore})`;
+    const dexMod = calculateMod(dexScore);
+    let totalBonus = dexMod;
+
+    // Apply Proficiency logic to the Modifier
+    if (proficiency === 'Proficient') {
+        totalBonus += pb;
+    } else if (proficiency === 'Expert') {
+        totalBonus += (pb * 2);
+    }
+    
+    // Score is always 10 + Total Modifier
+    const score = 10 + totalBonus;
+
+    // Return format: +Mod (Score)
+    return `${formatSign(totalBonus)} (${score})`;
 }
 
 function renderAbilityTable(scores, saves, pb) {
@@ -347,12 +393,18 @@ function renderFeatureBucket(list, title) {
 function renderFeatureList(list) {
     return list.map(f => {
         let html = marked.parse(f.description);
+        
+        // 1. Force the Name to be Bold + Italics (***Name.***)
         const titleHtml = `<strong><em>${f.name}.</em></strong> `;
+        
+        // 2. Prepend the name to the first paragraph of the description
+        // formatting.
         if (html.startsWith('<p>')) {
             html = html.replace('<p>', `<p>${titleHtml}`);
         } else {
             html = `<p>${titleHtml}</p>` + html;
         }
+        
         return `<div class="feature-item">${html}</div>`;
     }).join('');
 }
