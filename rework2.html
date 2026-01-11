@@ -209,7 +209,7 @@ title: Character Rework Tool
 
         // 4. CHECK PERMISSIONS using AuthGuard
         // rework.html requires 'Adventurer'
-        const hasAccess = await checkAccess(user.id, 'Adventurer');
+        const hasAccess = await checkAccess(user.id, 'Super Access');
 
         if (hasAccess) {
             // SUCCESS: Show controls and fetch data
@@ -220,7 +220,7 @@ title: Character Rework Tool
             if (authErrorGroup) {
                 authErrorGroup.style.display = 'flex';
                 authErrorGroup.querySelector('span').innerText = 
-                    "Access Denied: You need the 'Adventurer' role to Save/Load.";
+                    "Access Denied: You need the 'Super Access' role to Save/Load.";
             }
             if (window.setAuthStatus) window.setAuthStatus('denied');
         }
